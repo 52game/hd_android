@@ -1,0 +1,188 @@
+[
+    {
+        "outputFile": "F:\\Users\\zhangfei\\Desktop\\AndroidProject\\guomei-android\\movebeanslib\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-w560dp-land-v13\\values-w560dp-land-v13.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 64,
+                    "endOffset": 115
+                },
+                "from": {
+                    "file": "F:\\Users\\zhangfei\\.android\\build-cache\\a278f8a8e88e875bdbe80275f660f457b6812e08\\output\\res\\values-w560dp-land-v13\\values-w560dp-land-v13.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 64,
+                        "endOffset": 115
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 120,
+                    "endColumn": 53,
+                    "endOffset": 169
+                },
+                "from": {
+                    "file": "F:\\Users\\zhangfei\\.android\\build-cache\\a278f8a8e88e875bdbe80275f660f457b6812e08\\output\\res\\values-w560dp-land-v13\\values-w560dp-land-v13.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 120,
+                        "endColumn": 53,
+                        "endOffset": 169
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 174,
+                    "endColumn": 50,
+                    "endOffset": 220
+                },
+                "from": {
+                    "file": "F:\\Users\\zhangfei\\.android\\build-cache\\a278f8a8e88e875bdbe80275f660f457b6812e08\\output\\res\\values-w560dp-land-v13\\values-w560dp-land-v13.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 174,
+                        "endColumn": 50,
+                        "endOffset": 220
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "F:\\git\\hd_android\\movebeanslib\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-w560dp-land-v13\\values-w560dp-land-v13.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 64,
+                    "endOffset": 115
+                },
+                "from": {
+                    "file": "C:\\Users\\tr\\.android\\build-cache\\0c46c9d03cd944129b79b2c0f5e7d47a1266f8ae\\output\\res\\values-w560dp-land-v13\\values-w560dp-land-v13.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 64,
+                        "endOffset": 115
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 120,
+                    "endColumn": 53,
+                    "endOffset": 169
+                },
+                "from": {
+                    "file": "C:\\Users\\tr\\.android\\build-cache\\0c46c9d03cd944129b79b2c0f5e7d47a1266f8ae\\output\\res\\values-w560dp-land-v13\\values-w560dp-land-v13.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 120,
+                        "endColumn": 53,
+                        "endOffset": 169
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 174,
+                    "endColumn": 50,
+                    "endOffset": 220
+                },
+                "from": {
+                    "file": "C:\\Users\\tr\\.android\\build-cache\\0c46c9d03cd944129b79b2c0f5e7d47a1266f8ae\\output\\res\\values-w560dp-land-v13\\values-w560dp-land-v13.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 174,
+                        "endColumn": 50,
+                        "endOffset": 220
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "F:\\Users\\zhangfei\\Desktop\\hd_android\\movebeanslib\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-w560dp-land-v13\\values-w560dp-land-v13.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 64,
+                    "endOffset": 115
+                },
+                "from": {
+                    "file": "F:\\Users\\zhangfei\\.android\\build-cache\\a278f8a8e88e875bdbe80275f660f457b6812e08\\output\\res\\values-w560dp-land-v13\\values-w560dp-land-v13.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 64,
+                        "endOffset": 115
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 120,
+                    "endColumn": 53,
+                    "endOffset": 169
+                },
+                "from": {
+                    "file": "F:\\Users\\zhangfei\\.android\\build-cache\\a278f8a8e88e875bdbe80275f660f457b6812e08\\output\\res\\values-w560dp-land-v13\\values-w560dp-land-v13.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 120,
+                        "endColumn": 53,
+                        "endOffset": 169
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 174,
+                    "endColumn": 50,
+                    "endOffset": 220
+                },
+                "from": {
+                    "file": "F:\\Users\\zhangfei\\.android\\build-cache\\a278f8a8e88e875bdbe80275f660f457b6812e08\\output\\res\\values-w560dp-land-v13\\values-w560dp-land-v13.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 174,
+                        "endColumn": 50,
+                        "endOffset": 220
+                    }
+                }
+            }
+        ]
+    }
+]

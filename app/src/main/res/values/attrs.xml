@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CollapsingToolbarLayout_Layout">
+        <attr name="layout_collapseMode">
+
+            <enum name="none" value="0" />
+
+            <enum name="pin" value="1" />
+
+            <enum name="parallax" value="2" />
+        </attr>
+        <attr name="layout_collapseParallaxMultiplier" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="PicturesLayout">
+        <attr name="verticalSpace" format="dimension" />
+        <attr name="horizontalSpace" format="dimension" />
+        <attr name="column" format="integer" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lltRegisterParent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/partial_action_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/regular_dimen_x15"
+            android:paddingRight="@dimen/regular_dimen_x15">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/regular_dimen_x20"
+                android:background="@drawable/bg_theme_input_corners"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/regular_dimen_x10"
+                android:paddingRight="@dimen/regular_dimen_x20">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/regular_dimen_x10"
+                    android:src="@mipmap/ic_launcher" />
+
+                <View
+                    style="@style/normal_line_vertical"
+                    android:layout_margin="@dimen/regular_dimen_x10" />
+
+                <EditText
+                    android:id="@+id/etPhone"
+                    style="@style/normal_edt_theme"
+                    android:layout_centerVertical="true"
+                    android:background="@android:color/transparent"
+                    android:hint="手机号"
+                    android:inputType="phone"
+                    android:maxLength="11" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/regular_dimen_x20">
+
+                <LinearLayout
+                    android:id="@+id/lltCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_theme_input_corners"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/regular_dimen_x10"
+                    android:paddingRight="@dimen/regular_dimen_x20">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/regular_dimen_x10"
+                        android:src="@mipmap/ic_launcher" />
+
+                    <View
+                        style="@style/normal_line_vertical"
+                        android:layout_margin="@dimen/regular_dimen_x10" />
+
+                    <EditText
+                        android:id="@+id/etCode"
+                        style="@style/normal_edt_theme"
+                        android:background="@android:color/transparent"
+                        android:hint="验证码"
+                        android:inputType="numberSigned"
+                        android:maxLength="6" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnSendCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignBottom="@id/lltCode"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/lltCode"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/btn_theme_half_corners"
+                    android:gravity="center"
+                    android:maxEms="8"
+                    android:minEms="8"
+                    android:text="获取验证码"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_14" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btnNext"
+                style="@style/btn_corners_theme"
+                android:layout_marginTop="@dimen/regular_dimen_x20"
+                android:text="下一步" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

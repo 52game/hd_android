@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "F:\\git\\hd_android\\movebeanslib\\build\\intermediates\\res\\merged\\release\\xml\\filepaths.xml",
+        "source": "F:\\git\\hd_android\\movebeanslib\\src\\main\\res\\xml\\filepaths.xml"
+    },
+    {
+        "merged": "F:\\Users\\zhangfei\\Desktop\\AndroidProject\\guomei-android\\movebeanslib\\build\\intermediates\\res\\merged\\release\\xml\\filepaths.xml",
+        "source": "F:\\Users\\zhangfei\\Desktop\\AndroidProject\\guomei-android\\movebeanslib\\src\\main\\res\\xml\\filepaths.xml"
+    },
+    {
+        "merged": "F:\\Users\\zhangfei\\Desktop\\hd_android\\movebeanslib\\build\\intermediates\\res\\merged\\release\\xml\\filepaths.xml",
+        "source": "F:\\Users\\zhangfei\\Desktop\\hd_android\\movebeanslib\\src\\main\\res\\xml\\filepaths.xml"
+    }
+]

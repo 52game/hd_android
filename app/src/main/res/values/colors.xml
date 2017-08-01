@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="theme_color">#409262</color>
+    <color name="theme_color_pressed">#0e6030</color>
+    <color name="bg_background">#ffefefef</color>
+    <color name="line_color">#dfdfdf</color>
+    <color name="gray_text_color">#acacac</color>
+    <color name="normal_text_color">#555555</color>
+    <color name="red_color">#ee1c2b</color>
+    <color name="red_color_pressed">#bc0000</color>
+
+
+    <color name="black_button_disabled">#9F9F9F</color>
+    <color name="theme_input_line_color">#d6d6d6</color>
+
+    <!-- 下拉刷新时，颜色值 -->
+    <color name="swiperefresh_color1">#ff409262</color>
+    <color name="swiperefresh_color2">#ffffbb33</color>
+    <color name="swiperefresh_color3">#ffff4444</color>
+    <color name="swiperefresh_color4">#ffaa66cc</color>
+
+    <!--item的水波纹颜色-->
+    <color name="itemBackground">#DD7D7D7D</color>
+    <!--item的5.0一下版本选择器颜色-->
+    <color name="itemLowBackground">#d9d9d9</color>
+    <!--页面背景的颜色-->
+    <color name="colorPageBg">#f2f4f5</color>
+
+    <!--签到背景的颜色-->
+    <color name="signBg">#0099FF</color>
+    <!--签到字体的颜色-->
+    <color name="sign_text_white">#FFFFFF</color>
+    <color name="sign_text_black">#000000</color>
+    <color name="sign_text_lightBule">#82CDFF</color>
+</resources>

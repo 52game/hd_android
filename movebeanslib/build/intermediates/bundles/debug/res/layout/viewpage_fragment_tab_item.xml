@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tab_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingBottom="@dimen/regular_dimen_x15"
+            android:paddingLeft="@dimen/regular_dimen_x20"
+            android:paddingRight="@dimen/regular_dimen_x20"
+            android:paddingTop="@dimen/regular_dimen_x20"
+            android:text="最新资讯"
+            android:textColor="@drawable/viewpage_selector_slide_title"
+            android:textSize="@dimen/text_size_18" />
+
+        <ImageView
+            android:id="@+id/ivUnread"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/tab_title"
+            android:layout_marginRight="@dimen/regular_dimen_x6"
+            android:layout_marginTop="@dimen/regular_dimen_x17"
+            android:visibility="gone"
+            android:src="@drawable/circle_red" />
+    </RelativeLayout>
+
+</LinearLayout>

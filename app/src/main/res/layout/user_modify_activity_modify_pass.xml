@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/partial_action_bar" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="right"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/regular_dimen_x15"
+        android:paddingRight="@dimen/regular_dimen_x15">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/regular_dimen_x15"
+            android:background="@drawable/bg_theme_input_corners"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/regular_dimen_x10"
+            android:paddingRight="@dimen/regular_dimen_x20">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/regular_dimen_x10"
+                android:src="@mipmap/ic_launcher" />
+
+            <View
+                style="@style/normal_line_vertical"
+                android:layout_margin="@dimen/regular_dimen_x10" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                style="@style/normal_edt_theme"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:hint="你的旧密码"
+                android:inputType="textPassword"
+                android:maxLength="20" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/regular_dimen_x15"
+            android:background="@drawable/bg_theme_input_corners"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/regular_dimen_x10"
+            android:paddingRight="@dimen/regular_dimen_x20">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/regular_dimen_x10"
+                android:src="@mipmap/ic_launcher" />
+
+            <View
+                style="@style/normal_line_vertical"
+                android:layout_margin="@dimen/regular_dimen_x10" />
+
+            <EditText
+                android:id="@+id/etNewPassword"
+                style="@style/normal_edt_theme"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:hint="你的新密码"
+                android:inputType="textPassword"
+                android:maxLength="20" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/regular_dimen_x15"
+            android:background="@drawable/bg_theme_input_corners"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/regular_dimen_x10"
+            android:paddingRight="@dimen/regular_dimen_x20">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/regular_dimen_x10"
+                android:src="@mipmap/ic_launcher" />
+
+            <View
+                style="@style/normal_line_vertical"
+                android:layout_margin="@dimen/regular_dimen_x10" />
+
+            <EditText
+                android:id="@+id/etPasswordAgain"
+                style="@style/normal_edt_theme"
+                android:background="@android:color/transparent"
+                android:hint="重复你的新密码"
+                android:inputType="textPassword"
+                android:maxLength="20" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnModify"
+            style="@style/btn_corners_theme"
+            android:layout_marginTop="@dimen/regular_dimen_x15"
+            android:text="修改" />
+    </LinearLayout>
+
+</LinearLayout>

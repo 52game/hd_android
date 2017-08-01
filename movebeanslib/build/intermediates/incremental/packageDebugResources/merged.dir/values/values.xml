@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_color">#EDEDED</color>
+    <color name="cc">#59a9ff</color>
+    <color name="contents_text">#ff000000</color>
+    <color name="encode_view">#ffffffff</color>
+    <color name="grgray">#686868</color>
+    <color name="header">#58567D</color>
+    <color name="help_button_view">#ffcccccc</color>
+    <color name="help_view">#ff404040</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="result_image_border">#ffffffff</color>
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c000ff00</color>
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="sbc_header_text">#ff808080</color>
+    <color name="sbc_header_view">#ffffffff</color>
+    <color name="sbc_layout_view">#ffffffff</color>
+    <color name="sbc_list_item">#fffff0e0</color>
+    <color name="sbc_page_number_text">#ff000000</color>
+    <color name="sbc_snippet_text">#ff4b4b4b</color>
+    <color name="share_text">#ff000000</color>
+    <color name="share_view">#ffffffff</color>
+    <color name="status_text">#ffffffff</color>
+    <color name="status_view">#50000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <declare-styleable name="CircleImageView"><attr format="dimension" name="civ_border_width"/><attr format="color" name="civ_border_color"/><attr format="boolean" name="civ_border_overlay"/><attr format="color" name="civ_fill_color"/></declare-styleable>
+    <declare-styleable name="PagerSlidingTabStrip"><attr format="reference|color" name="slidingBlock"/><attr format="boolean" name="allowWidthFull"/><attr format="boolean" name="disableViewPager"/></declare-styleable>
+    <declare-styleable name="androidWheelView"><attr format="integer" name="awv_textsize"/><attr format="float" name="awv_lineSpace"/><attr format="integer" name="awv_centerTextColor"/><attr format="integer" name="awv_outerTextColor"/><attr format="integer" name="awv_dividerTextColor"/><attr format="integer" name="awv_itemsVisibleCount"/><attr format="boolean" name="awv_isLoop"/><attr format="integer" name="awv_initialPosition"/><attr format="float" name="awv_scaleX"/></declare-styleable>
+    <declare-styleable name="innerrect"><attr format="dimension" name="inner_width"/><attr format="dimension" name="inner_height"/><attr format="dimension" name="inner_margintop"/><attr format="color" name="inner_corner_color"/><attr format="dimension" name="inner_corner_length"/><attr format="dimension" name="inner_corner_width"/><attr format="reference" name="inner_scan_bitmap"/><attr format="integer" name="inner_scan_speed"/><attr format="boolean" name="inner_scan_iscircle"/></declare-styleable>
+    <dimen name="regular_dimen_x0_5">0.5dp</dimen>
+    <dimen name="regular_dimen_x1">1dp</dimen>
+    <dimen name="regular_dimen_x10">10dp</dimen>
+    <dimen name="regular_dimen_x11">11dp</dimen>
+    <dimen name="regular_dimen_x12">12dp</dimen>
+    <dimen name="regular_dimen_x13">13dp</dimen>
+    <dimen name="regular_dimen_x14">14dp</dimen>
+    <dimen name="regular_dimen_x140">140dp</dimen>
+    <dimen name="regular_dimen_x15">15dp</dimen>
+    <dimen name="regular_dimen_x16">16dp</dimen>
+    <dimen name="regular_dimen_x160">160dp</dimen>
+    <dimen name="regular_dimen_x17">17dp</dimen>
+    <dimen name="regular_dimen_x18">18dp</dimen>
+    <dimen name="regular_dimen_x19">19dp</dimen>
+    <dimen name="regular_dimen_x2">2dp</dimen>
+    <dimen name="regular_dimen_x20">20dp</dimen>
+    <dimen name="regular_dimen_x21">21dp</dimen>
+    <dimen name="regular_dimen_x25">25dp</dimen>
+    <dimen name="regular_dimen_x28">28dp</dimen>
+    <dimen name="regular_dimen_x3">3dp</dimen>
+    <dimen name="regular_dimen_x30">30dp</dimen>
+    <dimen name="regular_dimen_x35">35dp</dimen>
+    <dimen name="regular_dimen_x4">4dp</dimen>
+    <dimen name="regular_dimen_x40">40dp</dimen>
+    <dimen name="regular_dimen_x5">5dp</dimen>
+    <dimen name="regular_dimen_x50">50dp</dimen>
+    <dimen name="regular_dimen_x6">6dp</dimen>
+    <dimen name="regular_dimen_x60">60dp</dimen>
+    <dimen name="regular_dimen_x65">65dp</dimen>
+    <dimen name="regular_dimen_x7">7dp</dimen>
+    <dimen name="regular_dimen_x70">70dp</dimen>
+    <dimen name="regular_dimen_x8">8dp</dimen>
+    <dimen name="regular_dimen_x80">80dp</dimen>
+    <dimen name="regular_dimen_x9">9dp</dimen>
+    <dimen name="text_size_10">10sp</dimen>
+    <dimen name="text_size_11">11sp</dimen>
+    <dimen name="text_size_12">12sp</dimen>
+    <dimen name="text_size_13">13sp</dimen>
+    <dimen name="text_size_14">14sp</dimen>
+    <dimen name="text_size_15">15sp</dimen>
+    <dimen name="text_size_16">16sp</dimen>
+    <dimen name="text_size_17">17sp</dimen>
+    <dimen name="text_size_18">18sp</dimen>
+    <dimen name="text_size_19">19sp</dimen>
+    <dimen name="text_size_20">20sp</dimen>
+    <dimen name="text_size_21">21sp</dimen>
+    <dimen name="text_size_24">24sp</dimen>
+    <dimen name="text_size_25">25sp</dimen>
+    <dimen name="text_size_30">30sp</dimen>
+    <dimen name="text_size_32">32sp</dimen>
+    <dimen name="text_size_35">35sp</dimen>
+    <dimen name="text_size_37">37sp</dimen>
+    <dimen name="text_size_40">40sp</dimen>
+    <dimen name="text_size_45">45sp</dimen>
+    <dimen name="text_size_46">46sp</dimen>
+    <dimen name="text_size_55">55sp</dimen>
+    <dimen name="text_size_9">9sp</dimen>
+    <item name="auto_focus" type="id"/>
+    <item name="decode" type="id"/>
+    <item name="decode_failed" type="id"/>
+    <item name="decode_succeeded" type="id"/>
+    <item name="encode_failed" type="id"/>
+    <item name="encode_succeeded" type="id"/>
+    <item name="image_url" type="id"/>
+    <item name="image_value" type="id"/>
+    <item name="launch_product_query" type="id"/>
+    <item name="quit" type="id"/>
+    <item name="restart_preview" type="id"/>
+    <item name="return_scan_result" type="id"/>
+    <item name="search_book_contents_failed" type="id"/>
+    <item name="search_book_contents_succeeded" type="id"/>
+    <string name="cube_views_load_more_click_to_load_more">点击加载更多</string>
+    <string name="cube_views_load_more_error">加载失败,点击重试</string>
+    <string name="cube_views_load_more_loaded_empty">数据为空</string>
+    <string name="cube_views_load_more_loaded_no_more">全部数据加载完毕</string>
+    <string name="cube_views_load_more_loading">加载中...</string>
+    <string name="libname">搬豆库</string>
+    <string name="loading">加载中</string>
+</resources>

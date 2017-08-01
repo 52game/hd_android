@@ -1,0 +1,35 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="app_name">hd_android</string>
+
+    <string name="activity_password_phone_text">您的手机号为  %1$s</string>
+
+    <string name="state_network_error">网络错误</string>
+    <string name="state_loading">正在加载…</string>
+    <string name="state_not_more">没有更多数据</string>
+    <string name="state_load_error">加载失败</string>
+    <string name="state_refreshing">正在刷新</string>
+    <string name="state_loading_error">数据加载中&#8230;</string>
+    <string name="state_submit">正在提交中&#8230;</string>
+
+    <!-- Error View -->
+    <string name="error_view_no_data">暂无内容</string>
+    <string name="error_view_loading">加载中…</string>
+    <string name="error_view_load_error_click_to_refresh">内容加载失败\r\n点击重新加载</string>
+    <string name="error_view_network_error_click_to_refresh">没有可用的网络</string>
+    <string name="tip_network_error">没有可用的网络</string>
+
+    <string name="unlogin_tip">您还未登录\r\n或网络延迟</string>
+
+    <!-- verifyPhone -->
+    <string name="verify_send_code_disabled">%1$s秒</string>
+
+    <string name="version_update">版本更新</string>
+    <string name="msg_version_update">最新版本号:%1$s\n%2$s</string>
+    <string name="action_update_version_positive">马上更新</string>
+    <string name="action_update_version_negative">稍后更新</string>
+    <string name="retry">重试</string>
+    <string name="msg_check_version_fail">检查版本失败,请重试!</string>
+
+    <string name="qr_code_tip">扫一扫上面的二维码，加我为好友</string>
+    <string name="qr_code_tip2">(长按保存到本地)</string>
+</resources>

@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "F:\\Users\\zhangfei\\Desktop\\hd_android\\movebeanslib\\build\\intermediates\\res\\merged\\release\\raw\\beep.ogg",
+        "source": "F:\\Users\\zhangfei\\Desktop\\hd_android\\movebeanslib\\src\\main\\res\\raw\\beep.ogg"
+    },
+    {
+        "merged": "F:\\Users\\zhangfei\\Desktop\\AndroidProject\\guomei-android\\movebeanslib\\build\\intermediates\\res\\merged\\release\\raw\\beep.ogg",
+        "source": "F:\\Users\\zhangfei\\Desktop\\AndroidProject\\guomei-android\\movebeanslib\\src\\main\\res\\raw\\beep.ogg"
+    },
+    {
+        "merged": "F:\\git\\hd_android\\movebeanslib\\build\\intermediates\\res\\merged\\release\\raw\\beep.ogg",
+        "source": "F:\\git\\hd_android\\movebeanslib\\src\\main\\res\\raw\\beep.ogg"
+    }
+]
