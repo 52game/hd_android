@@ -273,7 +273,7 @@ public class SignCalendar extends ViewFlipper{
                         // 设置日期背景色
                         if (dayBgColorMap.get(dates[i][j]) != null) {
                             view.setTextColor(Color.WHITE);
-                            view.setBackgroundResource(R.mipmap.sign_circle);
+                            view.setBackgroundResource(R.drawable.sign_calendar_bg);
                         }
                         // 设置标记
                         setMarker(group, i, j);
