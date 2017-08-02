@@ -3,7 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/hd_android.iml" filepath="$PROJECT_DIR$/hd_android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hd_android.iml" filepath="$PROJECT_DIR$/hd_android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/movebeanslib/movebeanslib.iml" filepath="$PROJECT_DIR$/movebeanslib/movebeanslib.iml" />
       <module fileurl="file://$PROJECT_DIR$/movebeanslib/movebeanslib.iml" filepath="$PROJECT_DIR$/movebeanslib/movebeanslib.iml" />
     </modules>
   </component>
