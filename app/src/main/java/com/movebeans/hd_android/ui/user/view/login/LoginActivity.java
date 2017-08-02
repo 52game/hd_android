@@ -12,9 +12,9 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 
-import com.movebeans.hd_android.MainActivity;
 import com.movebeans.hd_android.R;
 import com.movebeans.hd_android.base.ToolbarActivity;
+import com.movebeans.hd_android.ui.location.LocationActivity;
 import com.movebeans.hd_android.ui.user.User;
 import com.movebeans.hd_android.ui.user.UserConstants;
 import com.movebeans.hd_android.ui.user.UserSessionManager;

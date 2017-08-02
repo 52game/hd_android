@@ -47,7 +47,8 @@
         <activity
             android:name=".ui.user.view.info.UserInfoActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".ui.sign.SignActivity"></activity>
+        <activity android:name=".ui.sign.SignActivity" />
+        <activity android:name=".ui.location.LocationActivity"></activity>
     </application>
 
 </manifest>
