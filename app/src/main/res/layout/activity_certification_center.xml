@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--认证中心-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_background"
+              android:orientation="vertical">
+
+    <include layout="@layout/partial_action_bar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <!--家政服务认证-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/regular_dimen_x12"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="农政服务认证"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_12"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="已认证1个"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_12"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/regular_dimen_x1"
+                android:layout_marginLeft="@dimen/regular_dimen_x12"
+                android:layout_marginRight="@dimen/regular_dimen_x12"
+                android:background="#60b9b8b8"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rlvSkills"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/regular_dimen_x1"
+                android:layout_marginLeft="@dimen/regular_dimen_x12"
+                android:layout_marginRight="@dimen/regular_dimen_x12"
+                android:background="#60b9b8b8"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/regular_dimen_x12"
+                android:text="+认证新技能"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="@dimen/text_size_14"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/regular_dimen_x10"
+                android:background="#609F9F9F"/>
+            <!--车辆认证-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/regular_dimen_x12"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="车辆认证"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_12"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="已认证1个"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_12"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/regular_dimen_x1"
+                android:layout_marginLeft="@dimen/regular_dimen_x12"
+                android:layout_marginRight="@dimen/regular_dimen_x12"
+                android:background="#60b9b8b8"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rlvCar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/regular_dimen_x1"
+                android:layout_marginLeft="@dimen/regular_dimen_x12"
+                android:layout_marginRight="@dimen/regular_dimen_x12"
+                android:background="#60b9b8b8"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/regular_dimen_x12"
+                android:text="+认证车辆"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="@dimen/text_size_14"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/regular_dimen_x10"
+                android:background="#609F9F9F"/>
+
+            <!--企业认证-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/regular_dimen_x12"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="企业认证"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_12"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="已认证1个"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_12"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/regular_dimen_x1"
+                android:layout_marginLeft="@dimen/regular_dimen_x12"
+                android:layout_marginRight="@dimen/regular_dimen_x12"
+                android:background="#60b9b8b8"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rlvEnterprise"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/regular_dimen_x1"
+                android:layout_marginLeft="@dimen/regular_dimen_x12"
+                android:layout_marginRight="@dimen/regular_dimen_x12"
+                android:background="#60b9b8b8"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/regular_dimen_x12"
+                    android:text="+认证企业"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="@dimen/text_size_14"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/regular_dimen_x12"
+                    android:text="+挂靠企业"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="@dimen/text_size_14"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/regular_dimen_x10"
+                android:background="#609F9F9F"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
