@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="F:\git\hd_android\movebeanslib\libs"><file name="lite-orm-1.9.1.jar" path="F:\git\hd_android\movebeanslib\libs\lite-orm-1.9.1.jar"/></source></dataSet><dataSet config="release"><source path="F:\git\hd_android\movebeanslib\src\release\jniLibs"/></dataSet></merger>
