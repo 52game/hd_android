@@ -33,6 +33,7 @@ dependencies {
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.jakewharton:butterknife:8.2.1'
     compile 'net.qiujuer.genius:ui:2.0.0-beta8'
+    compile 'com.belerweb:pinyin4j:2.5.0'
     testCompile 'junit:junit:4.12'
     apt 'com.jakewharton:butterknife-compiler:8.2.1'
 }

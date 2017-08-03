@@ -3,12 +3,18 @@ package com.movebeans.hd_android.ui.sign;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Window;
+import android.view.WindowManager;
 import android.widget.ImageView;
+import android.widget.PopupWindow;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.movebeans.hd_android.R;
@@ -27,12 +33,16 @@ public class SignActivity extends AppCompatActivity implements View.OnClickListe
     TextView tvBack,tvRule,tvIsSign,tvGetGold,tvMonth,tvDay,tvWeek,tvDate;
     ImageView ivIsSign;
     SignCalendar sc;
+    private PopupWindow mPopWindow;
+    private int popupWidth;
+    private int popupHeight;
     //是否签到
     boolean isSign=false;
     //日期
     String myDate;
 
     Dialog dialogSign;
+    Dialog dialogRule;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,6 +66,14 @@ public class SignActivity extends AppCompatActivity implements View.OnClickListe
         tvRule.setOnClickListener(this);
         ivIsSign.setOnClickListener(this);
         sc.setOnClickListener(this);
+
+        sc.setOnCalendarClickListener(new SignCalendar.OnCalendarClickListener() {
+            @Override
+            public void onCalendarClick(int row, int col, String dateFormat, RelativeLayout v) {
+
+                showPopupWindow(dateFormat,v);
+            }
+        });
     }
 
     @Override
@@ -65,6 +83,7 @@ public class SignActivity extends AppCompatActivity implements View.OnClickListe
                 finish();
                 break;
             case R.id.tv_sign_rule:
+                dialogRule.show();
                 break;
             case R.id.iv_sign_isSign:
                 if (!isSign){
@@ -88,16 +107,15 @@ public class SignActivity extends AppCompatActivity implements View.OnClickListe
                     null);
 
         dialogSign.setContentView(view);
-//        setDialogWindowAttr(dialog);
+        dialogRule = new Dialog(this);
+        dialogRule.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        View view2;
+            view2 = LayoutInflater.from(this).inflate(R.layout.dialog_sign_rule,
+                    null);
+
+        dialogRule.setContentView(view2);
     }
-//    public static void setDialogWindowAttr(Dialog dlg){
-//        Window window = dlg.getWindow();
-//        WindowManager.LayoutParams lp = window.getAttributes();
-//        lp.gravity = Gravity.CENTER;
-//        lp.width = WindowManager.LayoutParams.MATCH_PARENT;//宽高可设置具体大小
-//        lp.height = (int) ((WindowManager.LayoutParams.MATCH_PARENT)/2);
-//         dlg.getWindow().setAttributes(lp);
-//        }
+
 
 
     public void data(){
@@ -132,5 +150,30 @@ public class SignActivity extends AppCompatActivity implements View.OnClickListe
         tvDate.setText(mMonth+"月"+mDay+"日");
 
     }
+    private void showPopupWindow(final String dateFormat, RelativeLayout v) {
+        //设置contentView
+        View contentView = LayoutInflater.from(SignActivity.this).inflate(R.layout.popup_sign_repair, null);
+        mPopWindow = new PopupWindow(contentView,
+                ActionBar.LayoutParams.WRAP_CONTENT, WindowManager.LayoutParams.WRAP_CONTENT, true);
+        mPopWindow.setContentView(contentView);
+        ImageView imageView=(ImageView) contentView.findViewById(R.id.iv_sign_popup);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sc.setCalendarDayBgColor(dateFormat,0);
+                mPopWindow.dismiss();
+            }
+        });
+        //显示PopupWindow
+        contentView.measure(View.MeasureSpec.UNSPECIFIED, View.MeasureSpec.UNSPECIFIED);
+        popupHeight = contentView.getMeasuredHeight();
+        popupWidth = contentView.getMeasuredWidth();
 
+        //在控件上方显示
+        mPopWindow.setOutsideTouchable(true);
+        mPopWindow.setBackgroundDrawable(new BitmapDrawable());
+        int[] location = new int[2];
+        v.getLocationOnScreen(location);
+        mPopWindow.showAtLocation(v, Gravity.NO_GRAVITY, (location[0] + v.getWidth() / 2) - popupWidth / 2, location[1] - popupHeight+v.getHeight() / 2);
+    }
 }

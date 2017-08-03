@@ -31,7 +31,7 @@ public class LocationActivity extends AppCompatActivity {
     private ListView lvNav;
     // 字母导航Adapter
     private ArrayAdapter<String> navAdapter;
-
+    private  Cn2Spell spell;
     TextView tvNow;
     public static Intent createIntent(Context context) {
         Intent intent = new Intent(context, LocationActivity.class);

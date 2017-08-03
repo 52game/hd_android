@@ -164,7 +164,7 @@ public class SignCalendar extends ViewFlipper{
                             }
                         }
                         if (onCalendarClickListener != null) {
-                            onCalendarClickListener.onCalendarClick(row, col, dates[row][col]);
+                            onCalendarClickListener.onCalendarClick(row, col, dates[row][col],getDateView(row, col));
                         }
                     }
                 });
@@ -308,7 +308,7 @@ public class SignCalendar extends ViewFlipper{
      * onClick接口回调
      */
     public interface OnCalendarClickListener {
-        void onCalendarClick(int row, int col, String dateFormat);
+        void onCalendarClick(int row, int col, String dateFormat,RelativeLayout layout);
     }
 
     /**
