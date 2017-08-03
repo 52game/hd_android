@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+        <TextView
+            android:textColor="@color/sign_text_white"
+            android:id="@+id/tv_sign_rule_title"
+            android:layout_width="300dp"
+            android:layout_height="120dp"
+            android:background="@color/sign_text_lightBule"
+            android:gravity="center"
+            android:text="签到规则"
+            android:textSize="30dp" />
+
+
+    <TextView
+        android:textColor="@color/sign_text_white"
+        android:layout_below="@+id/tv_sign_rule_title"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@color/sign_text_lightBule"
+        android:padding="20dp"
+        android:text="xxxxxxxxxxxxxxxx
+        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+        xxxxxxxxxxxxxxxxxxxxxxxxx"
+        android:textSize="20dp" />
+</RelativeLayout>

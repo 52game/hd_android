@@ -15,10 +15,12 @@
         >
 
         <RelativeLayout
+            android:layout_marginTop="25dp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             >
             <TextView
+                android:id="@+id/tv_sign_back"
                 android:text="返回"
                 android:textColor="@color/sign_text_white"
                 android:gravity="center_vertical"
@@ -26,6 +28,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent" />
             <TextView
+                android:id="@+id/tv_sign_rule"
                 android:layout_alignParentRight="true"
                 android:layout_marginRight="10dp"
                 android:text="签到规则"
@@ -42,21 +45,22 @@
 
             >
             <ImageView
+                android:id="@+id/iv_sign_isSign"
                 android:layout_width="match_parent"
                 android:src="@mipmap/circle"
                 android:layout_centerInParent="true"
                 android:layout_height="match_parent" />
             <TextView
                 android:textColor="@color/sign_text_black"
-                android:textSize="20sp"
+                android:textSize="20dp"
                 android:id="@+id/tv_sign_isSign"
-                android:text="已签到"
+                android:text="签到"
                 android:layout_centerInParent="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <TextView
                 android:id="@+id/tv_sign_getCold"
-                android:textSize="10sp"
+                android:textSize="10dp"
                 android:text="+5金币"
                 android:layout_below="@+id/tv_sign_isSign"
                 android:layout_centerHorizontal="true"
@@ -91,6 +95,7 @@
                 android:orientation="vertical"
                 android:layout_height="wrap_content">
                 <TextView
+                    android:id="@+id/tv_sign_month"
                     android:textColor="@color/sign_text_white"
                     android:gravity="center"
                     android:text="7月"
@@ -99,14 +104,16 @@
                     android:paddingBottom="5dp"
                     android:layout_height="wrap_content" />
                 <TextView
-                    android:textSize="18sp"
+                    android:id="@+id/tv_sign_day"
+                    android:textSize="18dp"
                     android:textColor="@color/sign_text_white"
                     android:gravity="center"
                     android:text="21日"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
                 <TextView
-                    android:textSize="14sp"
+                    android:id="@+id/tv_sign_week"
+                    android:textSize="14dp"
                     android:paddingTop="5dp"
                     android:paddingBottom="5dp"
                     android:textColor="@color/sign_text_white"
@@ -129,23 +136,38 @@
                 android:orientation="vertical"
                 android:layout_height="match_parent">
             <TextView
-                android:textSize="16sp"
+                android:textSize="16dp"
                 android:layout_marginLeft="20dp"
                 android:textColor="@color/sign_text_white"
                 android:gravity="bottom"
-                android:text="已连续签到7天"
+                android:text="已连续签到1天"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
                 android:layout_height="0dp" />
             <TextView
-                android:textSize="16sp"
+                android:textSize="16dp"
                 android:layout_marginLeft="20dp"
                 android:textColor="@color/sign_text_white"
-                android:text="明天继续签到可以获得7金币"
+                android:text="明天继续签到可以获得5金币"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
                 android:layout_height="0dp" />
             </LinearLayout>
         </LinearLayout>
+        <TextView
+            android:id="@+id/tv_sign_date"
+            android:background="@color/sign_text_white"
+            android:text="7月31日"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.movebeans.hd_android.ui.sign.view.SignCalendar
+            android:id="@+id/sc_sign"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_height="match_parent">
+        </com.movebeans.hd_android.ui.sign.view.SignCalendar>
     </LinearLayout>
 </LinearLayout>

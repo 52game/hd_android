@@ -12,9 +12,9 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 
-import com.movebeans.hd_android.MainActivity;
 import com.movebeans.hd_android.R;
 import com.movebeans.hd_android.base.ToolbarActivity;
+import com.movebeans.hd_android.ui.sign.SignActivity;
 import com.movebeans.hd_android.ui.user.User;
 import com.movebeans.hd_android.ui.user.UserConstants;
 import com.movebeans.hd_android.ui.user.UserSessionManager;
@@ -173,7 +173,7 @@ public class LoginActivity extends ToolbarActivity<LoginPresenter> implements Lo
 //        UserSessionManager.getInstance().saveUserInfo(user);
 //        UserSessionManager.getInstance().login();
         showShortToast("登录成功");
-        startActivity(MainActivity.createIntent(mContext));
+        startActivity(SignActivity.createIntent(mContext));
         finish();
     }
 

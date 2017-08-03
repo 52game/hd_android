@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+    <ImageView
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="40dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:id="@+id/tv_skill_item_name"
+                android:gravity="center_vertical"
+                android:text="开锁上岗认证"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:textColor="@color/certificate_no"
+                android:background="@drawable/certificate_tv_frame"
+                android:gravity="center_vertical"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="未认证"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:textColor="@color/certificate_no"
+            android:text="提交相关资料进行认证"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+    </LinearLayout>
+    <TextView
+        android:drawableRight="@mipmap/ic_launcher"
+        android:gravity="center"
+        android:paddingRight="6dp"
+        android:text="进行认证"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp" />
+</LinearLayout>

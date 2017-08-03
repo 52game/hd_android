@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent">
+    <TextView
+        android:background="@drawable/dialog_sign_buttom"
+        android:textSize="50dp"
+        android:text="+5"
+        android:gravity="bottom|center_horizontal"
+        android:layout_width="300dp"
+        android:layout_height="120dp" />
+    <TextView
+        android:background="@drawable/dialog_sign_top"
+        android:gravity="center_horizontal"
+        android:textSize="20dp"
+        android:text="恭喜签到成功获得5个金币"
+        android:layout_width="300dp"
+        android:layout_height="120dp" />
+</LinearLayout>
