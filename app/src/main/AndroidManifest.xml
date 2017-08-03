@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.movebeans.hd_android">
+          package="com.movebeans.hd_android">
 
     <application
         android:allowBackup="true"
@@ -12,42 +12,72 @@
         <activity
             android:name=".ui.LoadingActivity"
             android:screenOrientation="portrait">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
         <activity
             android:name=".MainActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"/>
 
         <!-- /////////////////////////////////////用户模块/////////////////////////////////////// -->
         <!-- 登录页 -->
         <activity
             android:name=".ui.user.view.login.LoginActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"/>
         <!-- 注册页 -->
         <activity
             android:name=".ui.user.view.register.RegisterActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"/>
         <!-- 验证码页 -->
         <activity
             android:name=".ui.user.view.code.CodeActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"/>
         <!-- 忘记密码 -->
         <activity
             android:name=".ui.user.view.forget.ForgetActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"/>
         <!-- 修改密码 -->
         <activity
             android:name=".ui.user.view.modify.pass.ModifyPassActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"/>
         <!-- 用户信息 -->
         <activity
             android:name=".ui.user.view.info.UserInfoActivity"
-            android:screenOrientation="portrait" />
-        <activity android:name=".ui.sign.SignActivity"></activity>
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.sign.SignActivity"/>
+
+        <!-- 认证中心 -->
+        <activity
+            android:name=".ui.certification.CertificationCenterActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.certification.car.CertificationCarActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.certification.enterprise.CertificationEnterpriseActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.certification.enterprise.AttachSearchActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".ui.certification.enterprise.AttachEnterpriseDetailActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".ui.certification.car.ChooseCarModelsActivity"
+                  android:screenOrientation="portrait">
+        </activity>
     </application>
 
 </manifest>

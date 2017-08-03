@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@android:color/white"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/regular_dimen_x10"
+        >
+
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_close_black_24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="上传行驶证照片"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_15"
+            />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ivPictureCase"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/regular_dimen_x160"
+        android:layout_marginLeft="@dimen/regular_dimen_x20"
+        android:layout_marginRight="@dimen/regular_dimen_x20"
+        android:background="@color/bg_background"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/regular_dimen_x20"
+        android:layout_marginRight="@dimen/regular_dimen_x20"
+        android:layout_marginTop="@dimen/regular_dimen_x10"
+        android:lineSpacingMultiplier="1.3"
+        android:text="照片须符合以下条件\n1.行驶证正面照\n2.四角对齐\n3.无反光无遮挡"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_13"
+        />
+
+    <Button
+        android:id="@+id/btnUpload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/regular_dimen_x10"
+        android:layout_marginRight="@dimen/regular_dimen_x10"
+        android:text="上传照片"
+        android:textSize="@dimen/text_size_16"
+        />
+</LinearLayout>

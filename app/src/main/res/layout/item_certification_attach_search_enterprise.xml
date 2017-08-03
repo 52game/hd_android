@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/white"
+              android:gravity="center"
+              android:paddingLeft="@dimen/regular_dimen_x20"
+              android:paddingRight="@dimen/regular_dimen_x20"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="@dimen/regular_dimen_x10"
+        android:paddingBottom="@dimen/regular_dimen_x10"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_13"
+            tools:text="海道企业有限公司"
+            android:gravity="left|center_vertical"
+            />
+
+        <TextView
+            android:id="@+id/tvLegalPerson"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="right|center_vertical"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_12"
+            tools:text="法人：马化腾"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/regular_dimen_x1"
+        android:layout_alignParentBottom="true"
+        android:background="#60b9b8b8"/>
+</LinearLayout>

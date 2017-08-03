@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/regular_dimen_x12"
+                android:paddingRight="@dimen/regular_dimen_x12"
+                android:paddingTop="@dimen/regular_dimen_x12"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/regular_dimen_x50"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/ivIcon"
+            android:layout_width="@dimen/regular_dimen_x50"
+            android:layout_height="@dimen/regular_dimen_x50"
+            tools:background="@color/theme_color"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/regular_dimen_x10"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvCarName"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_16"
+                tools:text="宝马五系530Li（银色）"
+                />
+
+            <TextView
+                android:id="@+id/tvCarLicence"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/text_size_14"
+                tools:text="苏A12345"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/regular_dimen_x30"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_12"
+        tools:text="已认证"
+        tools:textColor="@android:color/black"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/regular_dimen_x1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/regular_dimen_x12"
+        android:background="#60b9b8b8"/>
+</RelativeLayout>
