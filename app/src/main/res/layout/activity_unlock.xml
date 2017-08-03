@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.movebeans.hd_android.ui.certification.skill.UnlockActivity">
+    <RelativeLayout
+        android:paddingTop="25dp"
+        android:background="@color/signBg"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        >
+        <TextView
+            android:paddingLeft="11dp"
+            android:gravity="center"
+            android:textColor="@color/sign_text_white"
+            android:text="返回"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:textSize="20dp"
+            android:textColor="@color/sign_text_white"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="开锁上岗认证"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:paddingRight="11dp"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/sign_text_white"
+            android:text="提交认证"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <TextView
+        android:layout_marginLeft="11dp"
+        android:gravity="bottom"
+        android:textSize="10dp"
+        android:paddingBottom="4dp"
+        android:text="请准确填写相关信息，信息填写不正确将不会认证通过"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+    <LinearLayout
+        android:background="@color/sign_text_white"
+        android:paddingLeft="11dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:gravity="center_vertical"
+            android:text="姓名"
+            android:layout_width="60dp"
+            android:layout_height="match_parent" />
+        <EditText
+            android:background="@null"
+            android:textColorHint="#ff0000"
+            android:hint="请输入姓名"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <TextView
+        android:background="@color/g_default_base_transparent"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    <LinearLayout
+        android:background="@color/sign_text_white"
+        android:paddingLeft="11dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:gravity="center_vertical"
+            android:text="姓名"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <TextView
+        android:background="@color/g_default_base_transparent"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    <LinearLayout
+        android:background="@color/sign_text_white"
+        android:paddingLeft="11dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:gravity="center_vertical"
+            android:text="证件号"
+            android:layout_width="60dp"
+            android:layout_height="match_parent" />
+        <EditText
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <TextView
+        android:background="@color/g_default_base_transparent"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    <LinearLayout
+        android:background="@color/sign_text_white"
+        android:paddingLeft="11dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:gravity="center_vertical"
+            android:text="备案号"
+            android:layout_width="60dp"
+            android:layout_height="match_parent" />
+        <EditText
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <TextView
+        android:background="@color/g_default_base_transparent"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    <LinearLayout
+        android:background="@color/sign_text_white"
+        android:paddingLeft="11dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:gravity="center_vertical"
+            android:text="有效时间"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:background="@color/sign_text_white"
+        android:paddingLeft="11dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:gravity="center_vertical"
+            android:text="选择公司"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <RelativeLayout
+        android:background="@drawable/unlock_dashed"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_centerInParent="true"
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:text="添加证件照片(正面)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

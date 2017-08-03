@@ -32,4 +32,7 @@
     <color name="sign_text_white">#FFFFFF</color>
     <color name="sign_text_black">#000000</color>
     <color name="sign_text_lightBule">#82CDFF</color>
+    <!--认证技能的颜色-->
+    <color name="certificate_no">#CCCCCC</color>
+
 </resources>
