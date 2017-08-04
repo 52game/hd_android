@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.movebeans.hd_android.ui.certification.skill.UnlockActivity">
+    tools:context="com.haidaoservice.yhs.ui.certification.skill.UnlockActivity">
     <RelativeLayout
         android:paddingTop="25dp"
         android:background="@color/signBg"

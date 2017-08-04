@@ -1,18 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.movebeans.hd_android.MainActivity">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.haidaoservice.yhs.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/lltBottomMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/tvHome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/regular_dimen_x5"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:gravity="center"
+            android:paddingBottom="@dimen/regular_dimen_x5"
+            android:paddingTop="@dimen/regular_dimen_x5"
+            android:text="首页"
+            android:textColor="@android:color/black"
+            />
+
+        <TextView
+            android:id="@+id/tvServiceOrder"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/regular_dimen_x5"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:gravity="center"
+            android:paddingBottom="@dimen/regular_dimen_x5"
+            android:paddingTop="@dimen/regular_dimen_x5"
+            android:text="服务单"
+            android:textColor="@android:color/black"
+            />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/regular_dimen_x0_5"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:id="@+id/tvMsg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/regular_dimen_x5"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:gravity="center"
+            android:paddingBottom="@dimen/regular_dimen_x5"
+            android:paddingTop="@dimen/regular_dimen_x5"
+            android:text="消息"
+            android:textColor="@android:color/black"
+            />
+
+        <TextView
+            android:id="@+id/tvMy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/regular_dimen_x5"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:gravity="center"
+            android:paddingBottom="@dimen/regular_dimen_x5"
+            android:paddingTop="@dimen/regular_dimen_x5"
+            android:text="我的"
+            android:textColor="@android:color/black"
+            />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/tvContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/lltBottomMenu"
+        android:background="@color/bg_background"
+        >
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            class="com.haidaoservice.yhs.ui.my.MyFragment"
+            />
+    </FrameLayout>
 
     <TextView
+        android:id="@+id/tvPublish"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-</android.support.constraint.ConstraintLayout>
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:drawablePadding="@dimen/regular_dimen_x5"
+        android:drawableTop="@mipmap/ic_launcher"
+        android:gravity="center"
+        android:paddingBottom="@dimen/regular_dimen_x5"
+        android:paddingTop="@dimen/regular_dimen_x5"
+        android:text="发布"
+        android:textColor="@android:color/black"
+        />
+</RelativeLayout>

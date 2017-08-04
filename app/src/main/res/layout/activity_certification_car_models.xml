@@ -1,36 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--选择车型页面-->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:tools="http://schemas.android.com/tools"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:orientation="vertical"
-              tools:context=".ui.certification.car.ChooseCarModelsActivity">
+                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                             xmlns:tools="http://schemas.android.com/tools"
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent"
+                             android:orientation="vertical"
+                             tools:context=".ui.certification.car.ChooseCarModelsActivity">
 
-    <include layout="@layout/partial_action_bar"/>
+<include layout="@layout/partial_action_bar"/>
 
-    <LinearLayout
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="-10dp"
+    android:background="@color/theme_color"
+    >
+
+    <TextView
+        android:id="@+id/tvSearch"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="-10dp"
-        android:background="@color/theme_color"
-        >
+        android:layout_height="@dimen/regular_dimen_x40"
+        android:layout_marginBottom="@dimen/regular_dimen_x6"
+        android:layout_marginLeft="@dimen/regular_dimen_x10"
+        android:layout_marginRight="@dimen/regular_dimen_x10"
+        android:background="@android:color/white"
+        android:gravity="center_vertical|left"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/regular_dimen_x10"
+        android:paddingRight="@dimen/regular_dimen_x10"
+        android:singleLine="true"
+        android:text="搜索"
+        android:textSize="@dimen/text_size_14"
+        />
+</LinearLayout>
 
-        <TextView
-            android:id="@+id/tvSearch"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/regular_dimen_x40"
-            android:layout_marginBottom="@dimen/regular_dimen_x6"
-            android:layout_marginLeft="@dimen/regular_dimen_x10"
-            android:layout_marginRight="@dimen/regular_dimen_x10"
-            android:background="@android:color/white"
-            android:gravity="center_vertical|left"
-            android:maxLines="1"
-            android:paddingLeft="@dimen/regular_dimen_x10"
-            android:paddingRight="@dimen/regular_dimen_x10"
-            android:singleLine="true"
-            android:text="搜索"
-            android:textSize="@dimen/text_size_14"
-            />
-    </LinearLayout>
+<me.yokeyword.indexablerv.IndexableLayout
+    android:id="@+id/indexableLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:indexBar_layout_width="@dimen/regular_dimen_x25"
+    app:indexBar_textColor="@android:color/black"
+    app:indexBar_textSpace="@dimen/regular_dimen_x8"/>
 </LinearLayout>

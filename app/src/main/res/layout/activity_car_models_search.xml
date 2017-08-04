@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--选择车型页面-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context=".ui.certification.car.CarModelSearchActivity">
+
+    <include layout="@layout/partial_action_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-10dp"
+        android:background="@color/theme_color"
+        >
+
+        <EditText
+            android:id="@+id/etSearchKey"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/regular_dimen_x40"
+            android:layout_marginBottom="@dimen/regular_dimen_x6"
+            android:layout_marginLeft="@dimen/regular_dimen_x10"
+            android:layout_marginRight="@dimen/regular_dimen_x10"
+            android:background="@android:color/white"
+            android:gravity="center_vertical|left"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/regular_dimen_x10"
+            android:paddingRight="@dimen/regular_dimen_x10"
+            android:singleLine="true"
+            android:text="搜索"
+            android:textSize="@dimen/text_size_14"
+            />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rlvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        tools:listitem="@layout/item_certification_attach_search_enterprise"
+        />
+</LinearLayout>

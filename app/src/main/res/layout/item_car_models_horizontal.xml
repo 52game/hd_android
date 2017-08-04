@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@android:color/white"
+                android:paddingBottom="@dimen/regular_dimen_x5"
+                android:paddingLeft="@dimen/regular_dimen_x10"
+                android:paddingRight="@dimen/regular_dimen_x10"
+                android:paddingTop="@dimen/regular_dimen_x5">
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="#ff0000"
+        android:minHeight="30dp"
+        />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@id/ivLogo"
+        android:layout_alignTop="@id/ivLogo"
+        android:layout_toRightOf="@id/ivLogo"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="@dimen/regular_dimen_x5"
+        android:paddingRight="@dimen/regular_dimen_x5"
+        android:singleLine="true"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_15"
+        tools:text="奥迪"
+        />
+
+</RelativeLayout>

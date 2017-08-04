@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.movebeans.hd_android.ui.location.LocationActivity">
+    tools:context="com.haidaoservice.yhs.ui.location.LocationActivity">
     <LinearLayout
         android:background="@color/signBg"
         android:paddingTop="25dp"

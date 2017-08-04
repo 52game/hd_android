@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.movebeans.hd_android.ui.sign.SignActivity">
+    tools:context="com.haidaoservice.yhs.ui.sign.SignActivity">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -163,11 +163,11 @@
             android:paddingBottom="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
-        <com.movebeans.hd_android.ui.sign.view.SignCalendar
+        <com.haidaoservice.yhs.ui.sign.view.SignCalendar
             android:id="@+id/sc_sign"
             android:layout_width="match_parent"
             android:layout_marginBottom="20dp"
             android:layout_height="match_parent">
-        </com.movebeans.hd_android.ui.sign.view.SignCalendar>
+        </com.haidaoservice.yhs.ui.sign.view.SignCalendar>
     </LinearLayout>
 </LinearLayout>

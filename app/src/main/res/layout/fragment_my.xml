@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/partial_action_bar"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rltCertificationCenter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/regular_dimen_x8"
+            android:paddingLeft="@dimen/regular_dimen_x10"
+            android:paddingRight="@dimen/regular_dimen_x10"
+            android:paddingTop="@dimen/regular_dimen_x8"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="认证中心"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_14"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawablePadding="@dimen/regular_dimen_x5"
+                android:drawableRight="@drawable/ic_keyboard_arrow_right_24dp"
+                android:gravity="center_vertical|left"
+                android:text="技能认证，企业认证"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/text_size_12"
+                />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/regular_dimen_x1"
+            android:layout_marginLeft="@dimen/regular_dimen_x10"
+            android:layout_marginRight="@dimen/regular_dimen_x10"
+            android:background="#60b9b8b8"/>
+
+        <RelativeLayout
+            android:id="@+id/rltLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/regular_dimen_x8"
+            android:paddingLeft="@dimen/regular_dimen_x10"
+            android:paddingRight="@dimen/regular_dimen_x10"
+            android:paddingTop="@dimen/regular_dimen_x8"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="登录演示"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_14"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawablePadding="@dimen/regular_dimen_x5"
+                android:drawableRight="@drawable/ic_keyboard_arrow_right_24dp"
+                android:gravity="center_vertical|left"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/text_size_12"
+                />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/regular_dimen_x1"
+            android:layout_marginLeft="@dimen/regular_dimen_x10"
+            android:layout_marginRight="@dimen/regular_dimen_x10"
+            android:background="#60b9b8b8"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.movebeans.hd_android">
+          package="com.haidaoservice.yhs">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,76 +11,73 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".ui.LoadingActivity"
+            android:name="com.haidaoservice.yhs.ui.LoadingActivity"
             android:screenOrientation="portrait">
-
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN" /> -->
-
-
-            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-            <!-- </intent-filter> -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name="com.haidaoservice.yhs.MainActivity"
             android:screenOrientation="portrait"/>
 
         <!-- /////////////////////////////////////用户模块/////////////////////////////////////// -->
         <!-- 登录页 -->
         <activity
-            android:name=".ui.user.view.login.LoginActivity"
+            android:name="com.haidaoservice.yhs.ui.user.view.login.LoginActivity"
             android:screenOrientation="portrait"/>
         <!-- 注册页 -->
         <activity
-            android:name=".ui.user.view.register.RegisterActivity"
+            android:name="com.haidaoservice.yhs.ui.user.view.register.RegisterActivity"
             android:screenOrientation="portrait"/>
         <!-- 验证码页 -->
         <activity
-            android:name=".ui.user.view.code.CodeActivity"
+            android:name="com.haidaoservice.yhs.ui.user.view.code.CodeActivity"
             android:screenOrientation="portrait"/>
         <!-- 忘记密码 -->
         <activity
-            android:name=".ui.user.view.forget.ForgetActivity"
+            android:name="com.haidaoservice.yhs.ui.user.view.forget.ForgetActivity"
             android:screenOrientation="portrait"/>
         <!-- 修改密码 -->
         <activity
-            android:name=".ui.user.view.modify.pass.ModifyPassActivity"
+            android:name="com.haidaoservice.yhs.ui.user.view.modify.pass.ModifyPassActivity"
             android:screenOrientation="portrait"/>
         <!-- 用户信息 -->
         <activity
-            android:name=".ui.user.view.info.UserInfoActivity"
+            android:name="com.haidaoservice.yhs.ui.user.view.info.UserInfoActivity"
             android:screenOrientation="portrait"/>
-        <activity android:name=".ui.sign.SignActivity"/>
-        <activity android:name=".ui.location.LocationActivity" />
-        <activity android:name=".ui.certification.skill.CertificateSkillActivity" />
-        <activity android:name=".ui.certification.skill.UnlockActivity"></activity>
+        <activity android:name="com.haidaoservice.yhs.ui.sign.SignActivity"/>
+        <activity android:name="com.haidaoservice.yhs.ui.location.LocationActivity"/>
+        <activity android:name="com.haidaoservice.yhs.ui.certification.skill.CertificateSkillActivity"/>
+        <activity android:name="com.haidaoservice.yhs.ui.certification.skill.UnlockActivity"></activity>
 
         <!-- 认证中心 -->
         <activity
-            android:name=".ui.certification.CertificationCenterActivity"
+            android:name="com.haidaoservice.yhs.ui.certification.CertificationCenterActivity"
             android:screenOrientation="portrait">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
         </activity>
         <activity
-            android:name=".ui.certification.car.CertificationCarActivity"
+            android:name="com.haidaoservice.yhs.ui.certification.car.CertificationCarActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".ui.certification.enterprise.CertificationEnterpriseActivity"
+            android:name="com.haidaoservice.yhs.ui.certification.enterprise.CertificationEnterpriseActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".ui.certification.enterprise.AttachSearchActivity"
+            android:name="com.haidaoservice.yhs.ui.certification.enterprise.AttachSearchActivity"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".ui.certification.enterprise.AttachEnterpriseDetailActivity"
+            android:name="com.haidaoservice.yhs.ui.certification.enterprise.AttachEnterpriseDetailActivity"
             android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".ui.certification.car.ChooseCarModelsActivity"
-                  android:screenOrientation="portrait">
+        <activity
+            android:name="com.haidaoservice.yhs.ui.certification.car.ChooseCarModelsActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.haidaoservice.yhs.ui.certification.car.CarModelSearchActivity"
+            android:screenOrientation="portrait">
         </activity>
     </application>
 

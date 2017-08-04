@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">s
 
-    <com.movebeans.hd_android.widget.RecyclerRefreshLayout
+    <com.haidaoservice.yhs.widget.RecyclerRefreshLayout
         android:id="@+id/refreshLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -15,9 +15,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scrollbars="vertical" />
-    </com.movebeans.hd_android.widget.RecyclerRefreshLayout>
+    </com.haidaoservice.yhs.widget.RecyclerRefreshLayout>
 
-    <com.movebeans.hd_android.widget.EmptyLayout
+    <com.haidaoservice.yhs.widget.EmptyLayout
         android:id="@+id/errorLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
