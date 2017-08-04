@@ -58,7 +58,7 @@ public class ForgetActivity extends ToolbarActivity<ForgetPresenter> implements 
     @Override
     protected void initToolbar() {
         super.initToolbar();
-        tvTitle.setText("重置密码1");
+        tvTitle.setText("重置密码");
     }
 
     @Override

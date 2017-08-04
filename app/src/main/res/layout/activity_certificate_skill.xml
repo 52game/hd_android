@@ -1,35 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.haidaoservice.yhs.ui.certification.skill.CertificateSkillActivity">
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.haidaoservice.yhs.ui.certification.skill.CertificateSkillActivity">
 
 
-    <RelativeLayout
-        android:paddingTop="25dp"
-        android:background="@color/signBg"
-        android:layout_width="match_parent"
-        android:layout_height="75dp"
-        >
-        <TextView
-            android:paddingLeft="11dp"
-            android:gravity="center"
-            android:textColor="@color/sign_text_white"
-            android:text="返回"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent" />
-        <TextView
-            android:textSize="20dp"
-            android:textColor="@color/sign_text_white"
-            android:layout_centerHorizontal="true"
-            android:gravity="center"
-            android:text="认证技能"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent" />
-    </RelativeLayout>
+    <include layout="@layout/partial_action_bar"/>
+
     <ListView
         android:id="@+id/lv_certificate_skill"
         android:layout_width="match_parent"

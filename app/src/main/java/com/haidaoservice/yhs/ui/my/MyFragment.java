@@ -8,6 +8,7 @@ import android.widget.TextView;
 import com.haidaoservice.yhs.R;
 import com.haidaoservice.yhs.base.BaseFragment;
 import com.haidaoservice.yhs.ui.certification.CertificationCenterActivity;
+import com.haidaoservice.yhs.ui.sign.SignActivity;
 import com.haidaoservice.yhs.ui.user.view.login.LoginActivity;
 
 import butterknife.BindView;
@@ -41,7 +42,7 @@ public class MyFragment extends BaseFragment {
     }
 
 
-    @OnClick({R.id.rltCertificationCenter, R.id.rltLogin})
+    @OnClick({R.id.rltCertificationCenter, R.id.rltLogin,R.id.rltSign})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.rltCertificationCenter:
@@ -49,6 +50,9 @@ public class MyFragment extends BaseFragment {
                 break;
             case R.id.rltLogin:
                 startActivity(LoginActivity.createIntent(mContext));
+                break;
+            case R.id.rltSign:
+                startActivity(SignActivity.createIntent(mContext));
                 break;
         }
     }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="theme_color">#409262</color>
-    <color name="theme_color_pressed">#0e6030</color>
+    <color name="theme_color">#2F95FF</color>
+    <color name="theme_color_pressed">#499ff7</color>
     <color name="bg_background">#ffefefef</color>
     <color name="line_color">#dfdfdf</color>
     <color name="gray_text_color">#acacac</color>
