@@ -14,6 +14,7 @@ import com.haidaoservice.lib.base.BasePresenter;
 import com.haidaoservice.lib.base.BaseView;
 import com.haidaoservice.lib.common.tool.TUtil;
 import com.haidaoservice.lib.view.dialog.DialogHelp;
+import com.haidaoservice.yhs.utils.ActivityController;
 
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
@@ -61,7 +62,7 @@ BaseActivity<T extends BasePresenter> extends AppCompatActivity {
             initToolbar();
             initView();
         }
-
+        ActivityController.addActivity(this);
     }
 
     protected void initWidget(View contentView) {

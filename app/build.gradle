@@ -52,8 +52,6 @@ dependencies {
     compile 'me.yokeyword:indexablerecyclerview:1.3.0'
     testCompile 'junit:junit:4.12'
     apt 'com.jakewharton:butterknife-compiler:8.2.1'
-<<<<<<< HEAD
-=======
 
     /**
      * 车型索引控件
@@ -61,5 +59,4 @@ dependencies {
      **/
     compile 'me.yokeyword:indexablerecyclerview:1.3.0'
 
->>>>>>> 0fd8db1e5984472dd6812879aeaa252f35467bdb
 }

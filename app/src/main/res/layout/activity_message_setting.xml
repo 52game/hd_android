@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_grey"
+    android:orientation="vertical">
+
+    <include layout="@layout/partial_action_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@color/bg_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/regular_dimen_x8"
+        android:paddingLeft="@dimen/regular_dimen_x15"
+        android:paddingRight="@dimen/regular_dimen_x15"
+        android:paddingTop="@dimen/regular_dimen_x8">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="系统消息"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="系统通知、聊天消息等必要提醒"
+                android:textColor="@color/gray_text_color"
+                android:textSize="@dimen/text_size_12" />
+        </LinearLayout>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical|left"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/text_size_12" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/regular_dimen_x0_5"
+        android:background="@color/bg_grey" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@color/bg_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/regular_dimen_x8"
+        android:paddingLeft="@dimen/regular_dimen_x15"
+        android:paddingRight="@dimen/regular_dimen_x15"
+        android:paddingTop="@dimen/regular_dimen_x8">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="热门推荐"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="为您推荐精准帖子、热门活动以及内容"
+                android:textColor="@color/gray_text_color"
+                android:textSize="@dimen/text_size_12" />
+        </LinearLayout>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical|left"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/text_size_12" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/regular_dimen_x5"
+        android:background="@color/bg_grey" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@color/bg_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/regular_dimen_x8"
+        android:paddingLeft="@dimen/regular_dimen_x15"
+        android:paddingRight="@dimen/regular_dimen_x15"
+        android:paddingTop="@dimen/regular_dimen_x8">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="声音"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_14" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical|left"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/text_size_12" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/regular_dimen_x0_5"
+        android:background="@color/bg_grey" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@color/bg_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/regular_dimen_x8"
+        android:paddingLeft="@dimen/regular_dimen_x15"
+        android:paddingRight="@dimen/regular_dimen_x15"
+        android:paddingTop="@dimen/regular_dimen_x8">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="震动"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_14" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical|left"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/text_size_12" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/regular_dimen_x5"
+        android:background="@color/bg_grey" />
+</LinearLayout>

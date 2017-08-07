@@ -15,10 +15,6 @@ import com.haidaoservice.lib.common.tool.InputMethodUtils;
 
 import butterknife.BindView;
 
-/**
- * Created by zhangfei on 2017/3/27.
- */
-
 public abstract class ToolbarActivity<T extends BasePresenter> extends BaseActivity<T> {
 
 

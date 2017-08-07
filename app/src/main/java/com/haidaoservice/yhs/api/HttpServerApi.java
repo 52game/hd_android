@@ -12,7 +12,6 @@ import rx.Observable;
 /**
  * 请求接口类
  * <p>
- * Created by zhangfei on 2017/3/22.
  */
 
 public interface HttpServerApi {

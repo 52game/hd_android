@@ -9,7 +9,6 @@ import com.haidaoservice.yhs.R;
 import com.haidaoservice.yhs.base.ToolbarActivity;
 
 /**
- * Created by zhangfei on 2017/4/10.
  */
 
 public class UserInfoActivity extends ToolbarActivity {

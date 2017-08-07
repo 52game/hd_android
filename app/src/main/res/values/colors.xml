@@ -39,4 +39,8 @@
     <!--hint字体的颜色-->
     <color name="hint_color">#c9c9c9</color>
 
+
+    <color name="bg_grey">#eeeef0</color>
+    <color name="dark_grey">#c5c5c5</color>
+    <color name="bg_white">#fff</color>
 </resources>
