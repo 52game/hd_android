@@ -1,6 +1,253 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
               android:layout_width="match_parent"
-              android:layout_height="wrap_content">
+              android:layout_height="wrap_content"
+              android:background="@android:color/white"
+              android:orientation="vertical">
+
+    <!--本地关键词-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivClear"
+            android:layout_width="@dimen/regular_dimen_x40"
+            android:layout_height="@dimen/regular_dimen_x40"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/regular_dimen_x10"
+            android:src="@mipmap/ic_launcher"
+            />
+
+        <com.haidaoservice.yhs.widget.CustomHorizontalScrollView
+            android:id="@+id/tabContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/ivClear"
+            android:scrollbars="none"
+            />
+    </RelativeLayout>
+
+    <!--四项服务-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/regular_dimen_x5"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <RelativeLayout
+                android:id="@+id/rltLifeService"
+                style="@style/home_serivce_item">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    >
+
+                    <ImageView
+                        android:id="@+id/ivServiceIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/ic_launcher"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/regular_dimen_x10"
+                        android:layout_marginRight="@dimen/regular_dimen_x10"
+                        android:layout_toRightOf="@id/ivServiceIcon"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            style="@style/home_service_item_title"
+                            android:text="@string/txt_home_life_service"/>
+
+                        <TextView
+                            style="@style/home_service_item_subtitle"
+                            android:text="@string/txt_home_life_service_subtitle"/>
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rltFreightService"
+                style="@style/home_serivce_item"
+                android:layout_marginLeft="@dimen/regular_dimen_x5">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    >
+
+                    <ImageView
+                        android:id="@+id/ivFreightIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/ic_launcher"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/regular_dimen_x10"
+                        android:layout_marginRight="@dimen/regular_dimen_x10"
+                        android:layout_toRightOf="@id/ivFreightIcon"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            style="@style/home_service_item_title"
+                            android:text="@string/txt_home_freight_service"/>
+
+                        <TextView
+                            style="@style/home_service_item_subtitle"
+                            android:text="@string/txt_home_freight_service_subtitle"/>
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/regular_dimen_x5"
+            android:orientation="horizontal"
+            >
+
+            <RelativeLayout
+                android:id="@+id/rltToolShare"
+                style="@style/home_serivce_item">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    >
+
+                    <ImageView
+                        android:id="@+id/ivToolIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/ic_launcher"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/regular_dimen_x10"
+                        android:layout_marginRight="@dimen/regular_dimen_x10"
+                        android:layout_toRightOf="@id/ivToolIcon"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            style="@style/home_service_item_title"
+                            android:text="@string/txt_home_tool_share"/>
+
+                        <TextView
+                            style="@style/home_service_item_subtitle"
+                            android:text="@string/txt_home_tool_share_subtitle"/>
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rltMoneyProject"
+                style="@style/home_serivce_item"
+                android:layout_marginLeft="@dimen/regular_dimen_x5">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    >
+
+                    <ImageView
+                        android:id="@+id/ivMoneyIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/ic_launcher"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/regular_dimen_x10"
+                        android:layout_marginRight="@dimen/regular_dimen_x10"
+                        android:layout_toRightOf="@id/ivMoneyIcon"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            style="@style/home_service_item_title"
+                            android:text="@string/txt_home_money_project"/>
+
+                        <TextView
+                            style="@style/home_service_item_subtitle"
+                            android:text="@string/txt_home_money_project_subtitle"/>
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--新闻头条-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/regular_dimen_x12"
+            android:src="@mipmap/ic_launcher"
+            />
+
+        <com.haidaoservice.yhs.widget.advtextswitcher.AdvTextSwitcher
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/switcher"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/regular_dimen_x40"
+            android:textColor="@android:color/black"
+            app:gravity="left"
+            app:textSize="@dimen/text_size_14"/>
+
+    </LinearLayout>
+
+    <!--具体服务-->
+    <LinearLayout
+        android:id="@+id/lltSpecificService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/regular_dimen_x5"
+        >
+
+    </LinearLayout>
 </LinearLayout>

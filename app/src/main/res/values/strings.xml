@@ -32,4 +32,12 @@
 
     <string name="qr_code_tip">扫一扫上面的二维码，加我为好友</string>
     <string name="qr_code_tip2">(长按保存到本地)</string>
+    <string name="txt_home_life_service">生活服务</string>
+    <string name="txt_home_life_service_subtitle">快捷安全服务到家</string>
+    <string name="txt_home_freight_service">货运服务</string>
+    <string name="txt_home_freight_service_subtitle">迅捷货运服务保证</string>
+    <string name="txt_home_tool_share">工具共享</string>
+    <string name="txt_home_tool_share_subtitle">实用工具资源共享</string>
+    <string name="txt_home_money_project">钱找项目</string>
+    <string name="txt_home_money_project_subtitle">优质渠道投资回报</string>
 </resources>
