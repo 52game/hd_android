@@ -31,4 +31,13 @@
         <!--星星满图-->
         <attr format="reference" name="starFill"/>
     </declare-styleable>
+
+    <declare-styleable name="switcher">
+        <attr name="textSize" format="dimension" />
+        <attr name="gravity">
+            <flag name="right" value="0x01" />
+            <flag name="left" value="0x02" />
+            <flag name="center" value="0x03" />
+        </attr>
+    </declare-styleable>
 </resources>
