@@ -43,23 +43,24 @@ public class HelpActivity extends ToolbarActivity {
 
     @Override
     public int getLayoutId() {
-        return 0;
+        return R.layout.activity_help_feedback_layout;
     }
 
     @Override
     protected void initToolbar() {
         super.initToolbar();
-        tvTitle.setText("");
-        tvRight.setText("");
-        tvRight.setVisibility(View.VISIBLE);
+        tvTitle.setText("帮助与反馈");
         ivLeft.setVisibility(View.VISIBLE);
     }
 
-    @OnClick({R.id.ivActionLeft})
+    @OnClick({R.id.ivActionLeft, R.id.flFeedBack})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.ivActionLeft:
                 finish();
+                break;
+            case R.id.flFeedBack:
+                showShortToast("意见反馈");
                 break;
         }
     }

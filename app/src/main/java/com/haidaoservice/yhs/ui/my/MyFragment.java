@@ -72,7 +72,7 @@ public class MyFragment extends BaseFragment {
                 showShortToast("修改个人信息");
                 break;
             case R.id.rlWallet:
-                showShortToast("我的钱包");
+                startActivity(MyWalletActivity.createIntent(mContext));
                 break;
             case R.id.rlAddress:
                 showShortToast("地址设置");

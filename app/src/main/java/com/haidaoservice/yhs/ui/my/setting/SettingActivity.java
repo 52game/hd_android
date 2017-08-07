@@ -10,6 +10,7 @@ import com.haidaoservice.yhs.R;
 import com.haidaoservice.yhs.base.BaseActivity;
 import com.haidaoservice.yhs.base.ToolbarActivity;
 import com.haidaoservice.yhs.ui.my.setting.commnent.CommentActivity;
+import com.haidaoservice.yhs.ui.my.setting.helpAFeedback.HelpActivity;
 import com.haidaoservice.yhs.ui.my.setting.message.MessageSettingActivity;
 import com.haidaoservice.yhs.utils.ActivityController;
 
@@ -21,7 +22,6 @@ public class SettingActivity extends ToolbarActivity {
     public void initView() {
 
     }
-
 
 
     @Override
@@ -71,7 +71,7 @@ public class SettingActivity extends ToolbarActivity {
                 startActivity(CommentActivity.createContext(mContext));
                 break;
             case R.id.rlFeedback:
-                showShortToast("帮助反馈");
+                startActivity(HelpActivity.createContext(mContext));
                 break;
             case R.id.rlCheckVersion:
                 //这里走检查更新接口
