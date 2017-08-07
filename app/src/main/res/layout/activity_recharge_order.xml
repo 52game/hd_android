@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.haidaoservice.yhs.ui.my.recharge.RechargeOrderActivity">
+
+    <include layout="@layout/partial_action_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="@dimen/regular_dimen_x16"
+        android:background="@color/sign_text_white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:text="￥600.00"
+                android:textSize="@dimen/regular_dimen_x28" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="top"
+                android:text="账户余额充值"
+                android:textSize="@dimen/regular_dimen_x20" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/text_size_16"
+        android:paddingTop="@dimen/regular_dimen_x10"
+        android:text="温馨提示:充值送金币,多充多送"
+        android:textColorHint="@color/hint_color"
+        android:textSize="@dimen/regular_dimen_x12" />
+
+    <LinearLayout
+        android:id="@+id/ll_recharge_order_wx"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/regular_dimen_x50"
+        android:background="@color/sign_text_white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="@dimen/regular_dimen_x8"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="微信支付"
+            android:textSize="@dimen/regular_dimen_x18" />
+
+        <CheckBox
+            android:clickable="false"
+            android:focusable="false"
+            android:checked="true"
+            android:id="@+id/cb_recharge_order_wx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/regular_dimen_x16"
+            android:button="@drawable/checkbox_style" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/regular_dimen_x1" />
+    <LinearLayout
+        android:id="@+id/ll_recharge_order_zfb"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/regular_dimen_x50"
+        android:background="@color/sign_text_white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="@dimen/regular_dimen_x8"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="支付宝支付"
+            android:textSize="@dimen/regular_dimen_x18" />
+
+        <CheckBox
+            android:clickable="false"
+            android:focusable="false"
+            android:id="@+id/cb_recharge_order_zfb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/regular_dimen_x16"
+            android:button="@drawable/checkbox_style" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/regular_dimen_x1" />
+    <LinearLayout
+        android:id="@+id/ll_recharge_order_bank"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/regular_dimen_x50"
+        android:background="@color/sign_text_white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="@dimen/regular_dimen_x8"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="银行卡支付"
+            android:textSize="@dimen/regular_dimen_x18" />
+
+        <CheckBox
+            android:clickable="false"
+            android:focusable="false"
+            android:id="@+id/cb_recharge_order_bank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/regular_dimen_x16"
+            android:button="@drawable/checkbox_style" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_recharge_order_more"
+        android:background="@color/sign_text_white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="@dimen/regular_dimen_x50">
+
+        <TextView
+            android:gravity="center"
+            android:text="查看更多支付方式"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/regular_dimen_x50" />
+        <ImageView
+            android:padding="@dimen/regular_dimen_x10"
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_recharge_sure"
+        android:background="@drawable/btn_theme_corners"
+        android:textColor="@color/sign_text_white"
+        android:text="确认支付"
+        android:layout_marginLeft="@dimen/regular_dimen_x16"
+        android:layout_marginRight="@dimen/regular_dimen_x16"
+        android:layout_marginTop="@dimen/regular_dimen_x40"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/regular_dimen_x50" />
+</LinearLayout>

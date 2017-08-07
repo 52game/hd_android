@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.haidaoservice.yhs.ui.my.recharge.RechargeSuccessActivity">
+    <include layout="@layout/partial_action_bar"/>
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginTop="@dimen/regular_dimen_x30"
+        android:layout_width="@dimen/regular_dimen_x80"
+        android:layout_height="@dimen/regular_dimen_x80" />
+    <TextView
+        android:layout_marginTop="@dimen/regular_dimen_x10"
+        android:textSize="@dimen/regular_dimen_x20"
+        android:layout_gravity="center_horizontal"
+        android:text="恭喜充值成功"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textColor="#FF9900"
+        android:layout_marginTop="@dimen/regular_dimen_x10"
+        android:textSize="@dimen/regular_dimen_x20"
+        android:layout_gravity="center_horizontal"
+        android:text="+5金币"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn_recharge_success_sure"
+        android:background="@drawable/btn_theme_corners"
+        android:textColor="@color/sign_text_white"
+        android:text="确定"
+        android:layout_margin="@dimen/regular_dimen_x16"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/regular_dimen_x50" />
+    <Button
+        android:id="@+id/btn_recharge_success_continue"
+        android:background="@drawable/btn_white_blue_corners"
+        android:textColor="@color/signBg"
+        android:text="继续充值"
+        android:layout_marginLeft="@dimen/regular_dimen_x16"
+        android:layout_marginRight="@dimen/regular_dimen_x16"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/regular_dimen_x50" />
+</LinearLayout>

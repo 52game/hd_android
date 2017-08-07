@@ -34,5 +34,9 @@
     <color name="sign_text_lightBule">#82CDFF</color>
     <!--认证技能的颜色-->
     <color name="certificate_no">#CCCCCC</color>
+    <!--钱包账户余额的颜色-->
+    <color name="my_wallet">#48BDFF</color>
+    <!--hint字体的颜色-->
+    <color name="hint_color">#c9c9c9</color>
 
 </resources>

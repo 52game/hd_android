@@ -23,7 +23,8 @@ import icepick.Icepick;
  * Created by zhangfei on 2017/3/24.
  */
 
-public abstract class BaseActivity<T extends BasePresenter> extends AppCompatActivity {
+public abstract class
+BaseActivity<T extends BasePresenter> extends AppCompatActivity {
 
     public String TAG = this.getClass().getSimpleName();
 
