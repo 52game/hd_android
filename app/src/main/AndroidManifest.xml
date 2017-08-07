@@ -4,12 +4,12 @@
 
     <uses-permission android:name="android.permission.INTERNET"/>
     <application
+        android:name=".base.App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:name=".base.App"
         android:theme="@style/AppTheme">
         <activity
             android:name="com.haidaoservice.yhs.ui.LoadingActivity"
@@ -50,14 +50,19 @@
             android:screenOrientation="portrait"/>
         <activity android:name="com.haidaoservice.yhs.ui.sign.SignActivity"/>
         <activity android:name="com.haidaoservice.yhs.ui.location.LocationActivity"/>
-        <activity android:name="com.haidaoservice.yhs.ui.certification.skill.CertificateSkillActivity"/>
-        <activity android:name="com.haidaoservice.yhs.ui.certification.skill.UnlockActivity"></activity>
+
 
         <!-- 认证中心 -->
         <activity
             android:name="com.haidaoservice.yhs.ui.certification.CertificationCenterActivity"
             android:screenOrientation="portrait">
         </activity>
+        <activity
+            android:name="com.haidaoservice.yhs.ui.certification.skill.CertificateSkillActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.haidaoservice.yhs.ui.certification.skill.UnlockActivity"
+            android:screenOrientation="portrait"/>
         <activity
             android:name="com.haidaoservice.yhs.ui.certification.car.CertificationCarActivity"
             android:screenOrientation="portrait"/>
@@ -66,20 +71,19 @@
             android:screenOrientation="portrait"/>
         <activity
             android:name="com.haidaoservice.yhs.ui.certification.enterprise.AttachSearchActivity"
-            android:screenOrientation="portrait">
-        </activity>
+            android:screenOrientation="portrait"/>
         <activity
             android:name="com.haidaoservice.yhs.ui.certification.enterprise.AttachEnterpriseDetailActivity"
-            android:screenOrientation="portrait">
-        </activity>
+            android:screenOrientation="portrait"/>
         <activity
-            android:name="com.haidaoservice.yhs.ui.certification.car.ChooseCarModelsActivity"
-            android:screenOrientation="portrait">
-        </activity>
+            android:name="com.haidaoservice.yhs.ui.certification.car.ChooseCarBrandActivity"
+            android:screenOrientation="portrait"/>
         <activity
-            android:name="com.haidaoservice.yhs.ui.certification.car.CarModelSearchActivity"
-            android:screenOrientation="portrait">
-        </activity>
+            android:name="com.haidaoservice.yhs.ui.certification.car.search.CarModelSearchActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.haidaoservice.yhs.ui.certification.car.search.CarModelResultActivity"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

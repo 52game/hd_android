@@ -37,7 +37,7 @@ public class ItemCertificationEnterpriseAdapter extends BaseRecyclerAdapter<Ente
 
     @Override
     protected RecyclerView.ViewHolder onCreateDefaultViewHolder(ViewGroup parent, int type) {
-        return new MyViewHolder(mInflater.inflate(R.layout.item_certification_enterprise, null));
+        return new MyViewHolder(mInflater.inflate(R.layout.item_certification_enterprise, parent,false));
     }
 
     @Override

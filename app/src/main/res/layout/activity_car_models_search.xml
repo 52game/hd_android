@@ -6,7 +6,7 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical"
-              tools:context=".ui.certification.car.CarModelSearchActivity">
+              tools:context=".ui.certification.car.search.CarModelSearchActivity">
 
     <include layout="@layout/partial_action_bar"/>
 
@@ -30,7 +30,8 @@
             android:paddingLeft="@dimen/regular_dimen_x10"
             android:paddingRight="@dimen/regular_dimen_x10"
             android:singleLine="true"
-            android:text="搜索"
+            android:hint="搜索"
+            android:imeOptions="actionSearch"
             android:textSize="@dimen/text_size_14"
             />
     </LinearLayout>
@@ -40,6 +41,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/white"
-        tools:listitem="@layout/item_certification_attach_search_enterprise"
+        tools:listitem="@layout/item_car_search_result"
         />
 </LinearLayout>

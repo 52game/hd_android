@@ -22,7 +22,7 @@ import me.yokeyword.indexablerv.IndexableAdapter;
  * Date: 2017/8/4 10:01
  * Version: 1.0
  */
-public class CarLinearLayoutAdapter extends IndexableAdapter<CarModel> {
+public class CarLinearLayoutAdapter extends IndexableAdapter<CarBrand> {
     private Context mContext;
     private LayoutInflater mInflater;
 
@@ -50,7 +50,7 @@ public class CarLinearLayoutAdapter extends IndexableAdapter<CarModel> {
     }
 
     @Override
-    public void onBindContentViewHolder(RecyclerView.ViewHolder holder, CarModel entity) {
+    public void onBindContentViewHolder(RecyclerView.ViewHolder holder, CarBrand entity) {
         ContentVH vh = (ContentVH) holder;
         vh.tvName.setText(entity.getName());
         GlideHelper.showImage(mContext, entity.getLogo(), vh.ivLogo);

@@ -36,6 +36,10 @@
     <dimen name="regular_dimen_x80">80dp</dimen>
     <dimen name="regular_dimen_x140">140dp</dimen>
     <dimen name="regular_dimen_x160">160dp</dimen>
+    <dimen name="text_size_5">5sp</dimen>
+    <dimen name="text_size_6">6sp</dimen>
+    <dimen name="text_size_7">7sp</dimen>
+    <dimen name="text_size_8">8sp</dimen>
     <dimen name="text_size_9">9sp</dimen>
     <dimen name="text_size_10">10sp</dimen>
     <dimen name="text_size_11">11sp</dimen>

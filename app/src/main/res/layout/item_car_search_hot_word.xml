@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tvName"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:singleLine="true"
+    android:gravity="center"
+    android:ellipsize="end"
+    android:background="@color/bg_background"
+    android:paddingBottom="@dimen/regular_dimen_x5"
+    android:paddingTop="@dimen/regular_dimen_x5"
+    android:layout_marginTop="@dimen/regular_dimen_x6"
+    android:layout_marginBottom="@dimen/regular_dimen_x6"
+    android:layout_marginLeft="@dimen/regular_dimen_x10"
+    android:layout_marginRight="@dimen/regular_dimen_x10"
+    android:textColor="@android:color/black"
+    android:textSize="@dimen/text_size_12"
+    tools:text="奥迪A1"
+    />

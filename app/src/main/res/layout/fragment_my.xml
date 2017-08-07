@@ -137,4 +137,5 @@
             android:layout_marginRight="@dimen/regular_dimen_x10"
             android:background="#60b9b8b8"/>
     </LinearLayout>
+
 </LinearLayout>

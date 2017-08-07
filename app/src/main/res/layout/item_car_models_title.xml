@@ -15,7 +15,7 @@
         android:paddingLeft="@dimen/regular_dimen_x10"
         android:paddingRight="@dimen/regular_dimen_x10"
         android:paddingTop="@dimen/regular_dimen_x5"
-        android:text="请准确填写相关信息，信息填写不正确将不会认证通过"
+        android:text="热门"
         android:textColor="@android:color/black"
         android:textSize="@dimen/text_size_12"
         />

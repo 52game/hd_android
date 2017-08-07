@@ -24,13 +24,13 @@ import me.yokeyword.indexablerv.IndexableHeaderAdapter;
  * Date: 2017/8/4 10:01
  * Version: 1.0
  */
-public class CarModelHeaderAdapter extends IndexableHeaderAdapter<String> {
+public class CarBrandHeaderAdapter extends IndexableHeaderAdapter<String> {
     private Context mContext;
     private LayoutInflater mInflater;
-    private List<CarModel> hotCars;
+    private List<CarBrand> hotCars;
     private BaseRecyclerAdapter.OnItemClickListener mOnItemClickListener;
 
-    public CarModelHeaderAdapter(Context context, String index, String indexTitle, List<CarModel> hostCars, BaseRecyclerAdapter.OnItemClickListener onItemClickListener) {
+    public CarBrandHeaderAdapter(Context context, String index, String indexTitle, List<CarBrand> hostCars, BaseRecyclerAdapter.OnItemClickListener onItemClickListener) {
         super(index, indexTitle, Arrays.asList(""));
         this.mContext = context;
         this.mOnItemClickListener = onItemClickListener;
@@ -43,7 +43,7 @@ public class CarModelHeaderAdapter extends IndexableHeaderAdapter<String> {
         return 1;
     }
 
-    public CarModel getCar(int position) {
+    public CarBrand getCar(int position) {
         return hotCars == null || hotCars.size() <= position || position < 0 ? null : hotCars.get(position);
     }
 
@@ -51,7 +51,7 @@ public class CarModelHeaderAdapter extends IndexableHeaderAdapter<String> {
     public RecyclerView.ViewHolder onCreateContentViewHolder(ViewGroup parent) {
         View view = mInflater.inflate(R.layout.partial_car_models_header, parent, false);
         ContentVH vh = new ContentVH(view);
-        CarModelGridAdapter modelGridAdapter = new CarModelGridAdapter(mContext);
+        CarBrandGridAdapter modelGridAdapter = new CarBrandGridAdapter(mContext);
         vh.rlvHotCar.setLayoutManager(new ScrollGridLayoutManager(mContext, 5));
         vh.rlvHotCar.setAdapter(modelGridAdapter);
         modelGridAdapter.setOnItemClickListener(mOnItemClickListener);

@@ -6,7 +6,7 @@
                              android:layout_width="match_parent"
                              android:layout_height="match_parent"
                              android:orientation="vertical"
-                             tools:context=".ui.certification.car.ChooseCarModelsActivity">
+                             tools:context=".ui.certification.car.ChooseCarBrandActivity">
 
 <include layout="@layout/partial_action_bar"/>
 

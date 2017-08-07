@@ -58,4 +58,5 @@
         <item name="android:windowExitAnimation">@null</item>
     </style>
 
+
 </resources>

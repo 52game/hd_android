@@ -35,7 +35,7 @@ public class ItemCertificationSkillAdapter extends BaseRecyclerAdapter<SkillCert
 
     @Override
     protected RecyclerView.ViewHolder onCreateDefaultViewHolder(ViewGroup parent, int type) {
-        return new MyViewHolder(mInflater.inflate(R.layout.item_certification_skill, null));
+        return new MyViewHolder(mInflater.inflate(R.layout.item_certification_skill, parent,false));
     }
 
     @Override

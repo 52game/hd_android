@@ -36,7 +36,7 @@ public class ItemCertificationCarAdapter extends BaseRecyclerAdapter<CarCertific
 
     @Override
     protected RecyclerView.ViewHolder onCreateDefaultViewHolder(ViewGroup parent, int type) {
-        return new MyViewHolder(mInflater.inflate(R.layout.item_certification_car, null));
+        return new MyViewHolder(mInflater.inflate(R.layout.item_certification_car, parent,false));
     }
 
     @Override

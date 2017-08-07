@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--首页-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_background"
+              android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme_color"
+        android:minHeight="?attr/actionBarSize"
+        android:paddingTop="@dimen/toolbar_padding_top"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/regular_dimen_x30"
+            android:layout_marginBottom="@dimen/regular_dimen_x6"
+            android:layout_marginLeft="@dimen/regular_dimen_x20"
+            android:layout_marginTop="@dimen/regular_dimen_x6"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:hint="找家政 找服务 找货运"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/regular_dimen_x10"
+            android:paddingRight="@dimen/regular_dimen_x10"
+            android:singleLine="true"
+            android:textSize="@dimen/text_size_12"
+            />
+
+        <TextView
+            android:id="@+id/tvSign"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="@dimen/regular_dimen_x20"
+            android:paddingRight="@dimen/regular_dimen_x20"
+            android:text="签到"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_13"
+            />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rlvHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        tools:listitem="@layout/item_home_recommand_list"
+        tools:listheader="@layout/partial_home_header"
+        />
+</LinearLayout>

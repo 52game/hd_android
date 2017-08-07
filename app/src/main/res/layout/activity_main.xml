@@ -80,17 +80,13 @@
     </LinearLayout>
 
     <FrameLayout
-        android:id="@+id/tvContent"
+        android:id="@+id/fltContent"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@id/lltBottomMenu"
         android:background="@color/bg_background"
+        android:layout_marginBottom="@dimen/regular_dimen_x3"
         >
-        <fragment
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            class="com.haidaoservice.yhs.ui.my.MyFragment"
-            />
     </FrameLayout>
 
     <TextView

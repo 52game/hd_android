@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@android:color/white"
+              android:descendantFocusability="blocksDescendants"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/regular_dimen_x3"
+        android:background="@android:color/white"
+        android:paddingBottom="@dimen/regular_dimen_x5"
+        android:paddingLeft="@dimen/regular_dimen_x20"
+        android:paddingRight="@dimen/regular_dimen_x20"
+        android:paddingTop="@dimen/regular_dimen_x5"
+        android:text="最近热搜"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_12"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:background="@android:color/white"
+        android:id="@+id/rlvHeaderBrand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/item_car_search_hot_word"
+        />
+</LinearLayout>

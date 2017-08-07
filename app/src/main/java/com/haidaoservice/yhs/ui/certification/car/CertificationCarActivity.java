@@ -69,7 +69,7 @@ public class CertificationCarActivity extends ToolbarActivity {
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.lltModels:
-                startActivity(ChooseCarModelsActivity.createIntent(mContext));
+                startActivity(ChooseCarBrandActivity.createIntent(mContext));
                 break;
             case R.id.lltColor:
                 new SideChoosePopupWindow(mContext).showAsDropDown(mToolbar);
