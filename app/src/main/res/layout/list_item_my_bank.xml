@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="37dp"
+    android:layout_marginRight="@dimen/regular_dimen_x16"
+    android:layout_marginLeft="@dimen/regular_dimen_x16"
+    android:background="@drawable/ll_white_corners"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/iv_my_bank_icon"
+        android:layout_margin="@dimen/regular_dimen_x10"
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="@dimen/regular_dimen_x50"
+        android:layout_height="@dimen/regular_dimen_x50" />
+    <TextView
+        android:textSize="@dimen/regular_dimen_x18"
+        android:layout_marginTop="@dimen/regular_dimen_x10"
+        android:text="中国建设银行"
+        android:layout_toRightOf="@+id/iv_my_bank_icon"
+        android:layout_width="wrap_content"
+        android:gravity="bottom"
+        android:layout_height="@dimen/regular_dimen_x25" />
+    <TextView
+        android:layout_marginTop="@dimen/regular_dimen_x35"
+        android:text="储蓄卡"
+        android:layout_toRightOf="@+id/iv_my_bank_icon"
+        android:layout_width="wrap_content"
+        android:gravity="top"
+        android:layout_height="@dimen/regular_dimen_x25" />
+
+<LinearLayout
+    android:layout_below="@+id/iv_my_bank_icon"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/regular_dimen_x50">
+    <TextView
+        android:layout_marginLeft="@dimen/regular_dimen_x40"
+        android:text="****"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:layout_height="match_parent" />
+    <TextView
+        android:layout_marginLeft="@dimen/regular_dimen_x20"
+        android:text="****"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:layout_height="match_parent" />
+    <TextView
+        android:layout_marginLeft="@dimen/regular_dimen_x20"
+        android:text="****"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:layout_height="match_parent" />
+    <TextView
+        android:layout_marginLeft="@dimen/regular_dimen_x20"
+        android:text="3456"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:layout_height="match_parent" />
+</LinearLayout>
+</RelativeLayout>

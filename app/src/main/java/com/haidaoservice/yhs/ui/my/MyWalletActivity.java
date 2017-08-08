@@ -8,6 +8,8 @@ import android.widget.TextView;
 
 import com.haidaoservice.yhs.R;
 import com.haidaoservice.yhs.base.ToolbarActivity;
+import com.haidaoservice.yhs.ui.my.bank.MyBankActivity;
+import com.haidaoservice.yhs.ui.my.code.IncomeCodeActivity;
 import com.haidaoservice.yhs.ui.my.recharge.MyWalletRechargeActivity;
 
 import butterknife.BindView;
@@ -53,10 +55,12 @@ public class MyWalletActivity extends ToolbarActivity {
                 startActivity(MyWalletRechargeActivity.createIntent(mContext));
                 break;
             case R.id.tv_my_wallet_income_code:
+                startActivity(IncomeCodeActivity.createIntent(mContext));
                 break;
             case R.id.tv_my_wallet_withdrawals:
                 break;
             case R.id.ll_my_wallet_bankcard:
+                startActivity(MyBankActivity.createIntent(mContext));
                 break;
             case R.id.ll_my_wallet_payment_safe:
                 break;

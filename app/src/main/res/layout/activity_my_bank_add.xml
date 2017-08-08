@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.haidaoservice.yhs.ui.my.bank.MyBankAddActivity">
+    <include layout="@layout/partial_action_bar"/>
+    <TextView
+        android:text="请绑定持卡本人的银行卡"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/regular_dimen_x30" />
+</LinearLayout>

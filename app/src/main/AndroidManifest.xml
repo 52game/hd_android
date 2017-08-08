@@ -88,7 +88,12 @@
         <activity android:name=".ui.my.recharge.MyWalletRechargeActivity" />
         <activity android:name=".ui.my.recharge.RechargeOrderActivity" />
         <activity android:name=".ui.my.recharge.RechargeSuccessActivity" />
-        <activity android:name=".ui.my.code.IncomeCodeActivity"></activity>
+        <activity android:name=".ui.my.code.IncomeCodeActivity" />
+        <activity android:name=".ui.my.code.SetCodeMoneyActivity" />
+        <activity android:name=".ui.my.transaction.TransactionDetailActivity" />
+        <activity android:name=".ui.my.bank.MyBankActivity" />
+        <activity android:name=".ui.my.bank.MyBankDetailActivity" />
+        <activity android:name=".ui.my.bank.MyBankAddActivity"></activity>
     </application>
 
 </manifest>

@@ -1,10 +1,266 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#FF9900"
     tools:context="com.haidaoservice.yhs.ui.my.code.IncomeCodeActivity">
+    <RelativeLayout
+        android:id="@+id/rl_income_code"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+        <TextView
+            android:id="@+id/tv_income_code_back"
+            android:text="返回"
+            android:textColor="@color/sign_text_white"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:textSize="@dimen/regular_dimen_x20"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:text="收款码"
+            android:textColor="@color/sign_text_white"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/tv_income_test"
+            android:gravity="center"
+            android:text="测试支付"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/ll_income_code"
+        android:layout_marginBottom="@dimen/regular_dimen_x50"
+        android:background="@drawable/ll_white_corners"
+        android:layout_marginTop="@dimen/regular_dimen_x40"
+        android:layout_marginRight="@dimen/regular_dimen_x20"
+        android:layout_marginLeft="@dimen/regular_dimen_x20"
+        android:layout_below="@+id/rl_income_code"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="@dimen/regular_dimen_x40"
+            android:gravity="center"
+            android:text="对方通过扫一扫完成支付"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_income_code_money_show"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/regular_dimen_x10"
+            android:gravity="center"
+            android:textSize="@dimen/regular_dimen_x20"
+            android:text="￥5000.00"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
-</LinearLayout>
+        <ImageView
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginTop="@dimen/regular_dimen_x16"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="250dp"
+            android:layout_height="250dp" />
+        <LinearLayout
+            android:paddingBottom="@dimen/regular_dimen_x16"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_income_code_money"
+                android:textColor="#0099FF"
+                android:paddingTop="@dimen/regular_dimen_x10"
+                android:paddingBottom="@dimen/regular_dimen_x10"
+                android:textSize="@dimen/regular_dimen_x16"
+                android:gravity="center"
+                android:text="设置金额"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:background="#D7D7D7"
+                android:layout_width="1dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/tv_income_code_save"
+                android:textColor="#0099FF"
+                android:paddingTop="@dimen/regular_dimen_x10"
+                android:paddingBottom="@dimen/regular_dimen_x10"
+                android:textSize="@dimen/regular_dimen_x16"
+                android:gravity="center"
+                android:text="保存二维码"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_income_code_payment"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:background="#D7D7D7"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/regular_dimen_x1" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/regular_dimen_x40">
+                <ImageView
+                    android:layout_marginLeft="@dimen/regular_dimen_x10"
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:gravity="center_vertical"
+                    android:text="joney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:padding="@dimen/regular_dimen_x10"
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/tv_income_code_payment_state"
+                    android:paddingRight="@dimen/regular_dimen_x16"
+                    android:gravity="center_vertical|right"
+                    android:text="支付中..."
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_income_code_success"
+        android:layout_marginBottom="@dimen/regular_dimen_x50"
+        android:background="@drawable/ll_white_corners"
+        android:layout_marginTop="@dimen/regular_dimen_x40"
+        android:layout_marginRight="@dimen/regular_dimen_x20"
+        android:layout_marginLeft="@dimen/regular_dimen_x20"
+        android:layout_below="@+id/rl_income_code"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+       <ImageView
+           android:layout_marginTop="@dimen/regular_dimen_x40"
+           android:layout_gravity="center_horizontal"
+           android:src="@mipmap/ic_launcher"
+           android:layout_width="50dp"
+           android:layout_height="50dp" />
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/regular_dimen_x40">
+
+            <TextView
+                android:gravity="center"
+                android:textSize="@dimen/regular_dimen_x20"
+                android:text="joney"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:src="@mipmap/ic_launcher"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+
+        <TextView
+            android:paddingBottom="@dimen/regular_dimen_x10"
+            android:paddingTop="@dimen/regular_dimen_x10"
+            android:textSize="@dimen/regular_dimen_x40"
+            android:gravity="center"
+            android:text="+60.00"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:paddingBottom="@dimen/regular_dimen_x10"
+            android:textSize="@dimen/regular_dimen_x20"
+            android:gravity="center"
+            android:text="交易成功"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_marginTop="100dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:background="#D7D7D7"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/regular_dimen_x1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/regular_dimen_x40"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/regular_dimen_x16"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingRight="@dimen/regular_dimen_x16"
+                    android:text="支付方" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/regular_dimen_x10"
+                    android:src="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="joney" />
+
+                <ImageView
+                    android:layout_marginRight="@dimen/regular_dimen_x10"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/regular_dimen_x10"
+                    android:src="@mipmap/ic_launcher" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_income_code_level"
+        android:background="@drawable/btn_yello_corners"
+        android:layout_marginTop="@dimen/regular_dimen_x15"
+        android:layout_below="@+id/rl_income_code"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="@dimen/regular_dimen_x20"
+        android:textColor="@color/sign_text_white"
+        android:text="等级"
+        android:layout_width="@dimen/regular_dimen_x50"
+        android:layout_height="@dimen/regular_dimen_x50" />
+    <TextView
+        android:id="@+id/tv_income_code_recode"
+        android:textSize="@dimen/regular_dimen_x16"
+        android:textColor="@color/sign_text_black"
+        android:padding="@dimen/regular_dimen_x16"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="收款记录"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

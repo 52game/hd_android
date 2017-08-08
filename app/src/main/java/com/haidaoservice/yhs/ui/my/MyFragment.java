@@ -8,7 +8,6 @@ import android.widget.TextView;
 import com.haidaoservice.yhs.R;
 import com.haidaoservice.yhs.base.BaseFragment;
 import com.haidaoservice.yhs.ui.certification.CertificationCenterActivity;
-import com.haidaoservice.yhs.ui.sign.SignActivity;
 import com.haidaoservice.yhs.ui.user.view.login.LoginActivity;
 
 import butterknife.BindView;
@@ -52,7 +51,7 @@ public class MyFragment extends BaseFragment {
                 startActivity(LoginActivity.createIntent(mContext));
                 break;
             case R.id.rltSign:
-                startActivity(SignActivity.createIntent(mContext));
+                startActivity(MyWalletActivity.createIntent(mContext));
                 break;
         }
     }
