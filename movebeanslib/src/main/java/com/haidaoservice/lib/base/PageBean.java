@@ -9,10 +9,10 @@ import java.util.List;
  */
 public class PageBean<T> implements Serializable {
     private List<T> items;
-    private int page = 0;
+    public static int PageStart = 0;
+    private int page = PageStart;
     private int count = 10;
     private int total = 0;
-
     public List<T> getItems() {
         return items;
     }

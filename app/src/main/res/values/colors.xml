@@ -43,4 +43,5 @@
     <color name="bg_grey">#eeeef0</color>
     <color name="dark_grey">#c5c5c5</color>
     <color name="bg_white">#fff</color>
+    <color name="normal_black">#000</color>
 </resources>

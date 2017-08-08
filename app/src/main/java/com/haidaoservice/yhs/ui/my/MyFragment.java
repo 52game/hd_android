@@ -8,7 +8,9 @@ import android.widget.TextView;
 import com.haidaoservice.yhs.R;
 import com.haidaoservice.yhs.base.BaseFragment;
 import com.haidaoservice.yhs.ui.certification.CertificationCenterActivity;
+import com.haidaoservice.yhs.ui.my.address.AddressListActivity;
 import com.haidaoservice.yhs.ui.my.setting.SettingActivity;
+import com.haidaoservice.yhs.ui.my.setting.personal.PersonalActivity;
 import com.haidaoservice.yhs.ui.sign.SignActivity;
 import com.haidaoservice.yhs.ui.user.view.login.LoginActivity;
 
@@ -53,11 +55,15 @@ public class MyFragment extends BaseFragment {
 
 
     @OnClick({R.id.rltCertificationCenter, R.id.rltLogin, R.id.rltSign, R.id.tvActionRight,
-            R.id.linInfo, R.id.rlWallet, R.id.rlAddress, R.id.rlHistory, R.id.rlCollection})
+            R.id.linInfo, R.id.rlWallet, R.id.rlAddress, R.id.rlHistory, R.id.rlCollection, R.id.rlSkills})
     public void onViewClicked(View view) {
         switch (view.getId()) {
-            case R.id.rltCertificationCenter:
+            case R.id.rlSkills:
+                //技能认证
                 startActivity(CertificationCenterActivity.createIntent(mContext));
+                break;
+            case R.id.rltCertificationCenter:
+                showShortToast("注册服务");
                 break;
             case R.id.rltLogin:
                 startActivity(LoginActivity.createIntent(mContext));
@@ -70,12 +76,14 @@ public class MyFragment extends BaseFragment {
                 break;
             case R.id.linInfo:
                 showShortToast("修改个人信息");
+                startActivity(PersonalActivity.createContext(mContext));
                 break;
             case R.id.rlWallet:
                 startActivity(MyWalletActivity.createIntent(mContext));
                 break;
             case R.id.rlAddress:
-                showShortToast("地址设置");
+//                showShortToast("地址设置");
+                startActivity(AddressListActivity.createContext(mContext));
                 break;
             case R.id.rlHistory:
                 showShortToast("历史记录");

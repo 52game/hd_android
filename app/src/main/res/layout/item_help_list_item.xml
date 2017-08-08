@@ -10,6 +10,7 @@
         android:id="@+id/rlAbout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/bg_white"
         android:orientation="horizontal"
         android:paddingBottom="@dimen/regular_dimen_x8"
         android:paddingLeft="@dimen/regular_dimen_x15"

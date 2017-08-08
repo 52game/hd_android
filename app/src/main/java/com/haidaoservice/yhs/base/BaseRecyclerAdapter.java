@@ -28,21 +28,21 @@ public abstract class BaseRecyclerAdapter<T> extends RecyclerView.Adapter {
 
     protected String mSystemTime;
 
-    public static final int STATE_NO_MORE = 1;
-    public static final int STATE_LOAD_MORE = 2;
-    public static final int STATE_INVALID_NETWORK = 3;
-    public static final int STATE_HIDE = 5;
-    public static final int STATE_REFRESHING = 6;
-    public static final int STATE_LOAD_ERROR = 7;
-    public static final int STATE_LOADING = 8;
+    public static final int STATE_NO_MORE = 1;//没有更多
+    public static final int STATE_LOAD_MORE = 2;//加载更多
+    public static final int STATE_INVALID_NETWORK = 3;//网络错误
+    public static final int STATE_HIDE = 5;//隐藏
+    public static final int STATE_REFRESHING = 6;//刷新中
+    public static final int STATE_LOAD_ERROR = 7;//加载错误
+    public static final int STATE_LOADING = 8;//加载中
 
     public final int BEHAVIOR_MODE;
     protected int mState;
 
-    public static final int NEITHER = 0;
-    public static final int ONLY_HEADER = 1;
-    public static final int ONLY_FOOTER = 2;
-    public static final int BOTH_HEADER_FOOTER = 3;
+    public static final int NEITHER = 0;//没有header 和footer
+    public static final int ONLY_HEADER = 1;//只有header
+    public static final int ONLY_FOOTER = 2;//只有footer
+    public static final int BOTH_HEADER_FOOTER = 3;//header 和footer 都有
 
     public static final int VIEW_TYPE_NORMAL = 0;
     public static final int VIEW_TYPE_HEADER = -1;

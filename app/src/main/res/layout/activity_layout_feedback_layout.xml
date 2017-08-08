@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_grey"
+    android:orientation="vertical">
+
+    <include layout="@layout/partial_action_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_white"
+                android:gravity="left|top"
+                android:hint="请描述您遇到的相关问题"
+                android:lines="5"
+                android:padding="@dimen/regular_dimen_x10"
+                android:textColor="@color/normal_black"
+                android:textColorHint="@color/gray_text_color"
+                android:textSize="@dimen/text_size_14" />
+
+            <View style="@style/normal_line_horizontal" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_white"
+                android:padding="@dimen/regular_dimen_x15">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/regular_dimen_x10"
+                android:background="@color/bg_white"
+                android:paddingBottom="@dimen/regular_dimen_x5"
+                android:paddingLeft="@dimen/regular_dimen_x10"
+                android:paddingTop="@dimen/regular_dimen_x5"
+                android:text="联系方式"
+                android:textColor="@color/normal_black"
+                android:textSize="@dimen/text_size_16" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_white"
+                android:gravity="left|top"
+                android:hint="请输入您的电话号码"
+                android:inputType="number"
+                android:lines="1"
+                android:padding="@dimen/regular_dimen_x10"
+                android:textColor="@color/normal_black"
+                android:textColorHint="@color/gray_text_color"
+                android:textSize="@dimen/text_size_14" />
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/regular_dimen_x20"
+                android:background="@color/theme_color"
+                android:text="提交反馈"
+                android:textColor="@color/bg_white"
+                android:textSize="@dimen/text_size_16" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

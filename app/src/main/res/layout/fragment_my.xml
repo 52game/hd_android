@@ -143,7 +143,7 @@
                 android:drawablePadding="@dimen/regular_dimen_x5"
                 android:drawableRight="@drawable/ic_keyboard_arrow_right_24dp"
                 android:gravity="center_vertical|left"
-                android:text="技能认证，企业认证"
+                android:text=""
                 android:textColor="@android:color/darker_gray"
                 android:textSize="@dimen/text_size_12" />
         </RelativeLayout>
@@ -269,6 +269,43 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/regular_dimen_x0_5"
             android:background="@color/bg_grey" />
+
+        <RelativeLayout
+            android:id="@+id/rlSkills"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_white"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/regular_dimen_x8"
+            android:paddingLeft="@dimen/regular_dimen_x10"
+            android:paddingRight="@dimen/regular_dimen_x10"
+            android:paddingTop="@dimen/regular_dimen_x8">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/ic_keyboard_arrow_right_24dp"
+                android:gravity="center_vertical"
+                android:text="技能认证"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawablePadding="@dimen/regular_dimen_x5"
+                android:drawableRight="@drawable/ic_keyboard_arrow_right_24dp"
+                android:gravity="center_vertical|left"
+                android:text="技能认证，企业认证"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/text_size_12" />
+        </RelativeLayout>
+
+        <View style="@style/normal_line_horizontal" />
 
         <RelativeLayout
             android:id="@+id/rltLogin"

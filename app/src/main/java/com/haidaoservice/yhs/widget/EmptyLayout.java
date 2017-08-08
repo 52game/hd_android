@@ -18,12 +18,12 @@ import net.qiujuer.genius.ui.widget.Loading;
 public class EmptyLayout extends LinearLayout implements
         View.OnClickListener {// , ISkinUIObserver {
 
-    public static final int HIDE_LAYOUT = 4;
-    public static final int NETWORK_ERROR = 1;
-    public static final int NETWORK_LOADING = 2;
-    public static final int NODATA = 3;
-    public static final int NODATA_ENABLE_CLICK = 5;
-    public static final int NO_LOGIN = 6;
+    public static final int HIDE_LAYOUT = 4;//隐藏
+    public static final int NETWORK_ERROR = 1;//网络错误
+    public static final int NETWORK_LOADING = 2;//网络加载
+    public static final int NODATA = 3;//没有数据,点击重新加载
+    public static final int NODATA_ENABLE_CLICK = 5;//没有数据可点击？
+    public static final int NO_LOGIN = 6;//未登录
 
     private Loading mLoading;
     private boolean clickEnable = true;
@@ -135,6 +135,11 @@ public class EmptyLayout extends LinearLayout implements
         }
     }
 
+    /**
+     * @author davidinchina
+     * cerate at 2017/8/8 下午2:31
+     * @description 设置加载页面状态
+     */
     public void setErrorType(int i) {
         setVisibility(View.VISIBLE);
         switch (i) {

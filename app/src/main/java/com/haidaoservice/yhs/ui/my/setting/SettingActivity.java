@@ -78,7 +78,7 @@ public class SettingActivity extends ToolbarActivity {
                 showShortToast("当前已经是最新版本");
                 break;
             case R.id.rlAbout:
-                showShortToast("关于我们");
+                startActivity(AboutActivity.createContext(mContext));
                 break;
             case R.id.flQuit:
                 DialogHelp.getConfirmDialog(mContext, "确定退出当前账号？", "退出", "取消", new DialogInterface.OnClickListener() {

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/regular_dimen_x5"
+    android:background="@color/bg_white"
+    android:orientation="vertical"
+    android:padding="@dimen/regular_dimen_x10">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="丁先生"
+            android:textColor="@color/normal_black"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical|left"
+            android:text="12345678999"
+            android:textColor="@color/normal_black"
+            android:textSize="@dimen/text_size_16" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/regular_dimen_x5"
+        android:paddingTop="@dimen/regular_dimen_x5"
+        android:text="江苏省无锡市江阴市乐成镇广州路123号"
+        android:textColor="@color/normal_black"
+        android:textSize="@dimen/text_size_14" />
+
+    <View style="@style/normal_line_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="默认地址"
+            android:textSize="@dimen/text_size_12" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_keyboard_arrow_right_24dp"
+            android:gravity="center_vertical"
+            android:text="编辑"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/regular_dimen_x15"
+            android:drawableLeft="@drawable/ic_keyboard_arrow_right_24dp"
+            android:gravity="center_vertical"
+            android:text="删除"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_12" />
+    </LinearLayout>
+
+</LinearLayout>

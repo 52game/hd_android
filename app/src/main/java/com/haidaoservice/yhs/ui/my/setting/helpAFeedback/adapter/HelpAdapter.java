@@ -29,12 +29,13 @@ public class HelpAdapter extends BaseRecyclerAdapter<String> {
 
     @Override
     protected RecyclerView.ViewHolder onCreateDefaultViewHolder(ViewGroup parent, int type) {
-        return null;
+        return new HelpHolder(mInflater.inflate(R.layout.item_help_list_item, parent, false));
     }
 
     @Override
     protected void onBindDefaultViewHolder(RecyclerView.ViewHolder holder, String item, int position) {
-
+        HelpHolder indexHolder = (HelpHolder) holder;
+        indexHolder.setInfo(item);
     }
 
     class HelpHolder extends BaseViewHolder {
@@ -43,6 +44,10 @@ public class HelpAdapter extends BaseRecyclerAdapter<String> {
 
         public HelpHolder(View itemView) {
             super(itemView);
+        }
+
+        public void setInfo(String object) {
+            tvTitle.setText(object);
         }
     }
 }

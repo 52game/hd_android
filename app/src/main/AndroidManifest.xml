@@ -94,7 +94,11 @@
         <activity android:name=".ui.my.recharge.MyWalletRechargeActivity" />
         <activity android:name=".ui.my.recharge.RechargeOrderActivity" />
         <activity android:name=".ui.my.recharge.RechargeSuccessActivity" />
-        <activity android:name=".ui.my.code.IncomeCodeActivity"></activity>
+        <activity android:name=".ui.my.code.IncomeCodeActivity" />
+        <activity android:name=".ui.my.setting.helpAFeedback.FeedbackAcitivity" />
+        <activity android:name=".ui.my.setting.AboutActivity" />
+        <activity android:name=".ui.my.setting.personal.PersonalActivity" />
+        <activity android:name=".ui.my.address.AddressListActivity" />
     </application>
 
 </manifest>

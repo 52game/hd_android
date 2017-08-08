@@ -28,9 +28,9 @@ public class RecyclerRefreshLayout extends SwipeRefreshLayout implements SwipeRe
 
     private boolean mIsOnLoading = false;
 
-    private boolean mCanLoadMore = true;
+    private boolean mCanLoadMore = true;//是否支持加载，（数据是否分页读取）
 
-    private boolean mHasMore = true;
+    private boolean mHasMore = true;//是否可以继续加载
 
     private int mYDown;
 
@@ -110,7 +110,6 @@ public class RecyclerRefreshLayout extends SwipeRefreshLayout implements SwipeRe
     }
 
 
-
     /**
      * 是否可以加载更多, 条件是到了最底部
      *
@@ -161,12 +160,12 @@ public class RecyclerRefreshLayout extends SwipeRefreshLayout implements SwipeRe
     }
 
     /**
-     * 加载结束记得调用
+     * 加载结束记得调用,hasMore,是否可以加载更多
      */
-    public void onComplete() {
+    public void onComplete(boolean hasMore) {
         setOnLoading(false);
         setRefreshing(false);
-        mHasMore = true;
+        mHasMore = hasMore;
     }
 
     /**
