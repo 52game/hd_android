@@ -44,22 +44,19 @@ dependencies {
      * 车型索引控件
      * https://github.com/YoKeyword/IndexableRecyclerView
      **/
-    
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.jakewharton:butterknife:8.2.1'
+    compile 'net.qiujuer.genius:ui:2.0.0-beta8'
+    compile 'com.belerweb:pinyin4j:2.5.0'
+    compile 'me.yokeyword:indexablerecyclerview:1.3.0'
+    testCompile 'junit:junit:4.12'
+    apt 'com.jakewharton:butterknife-compiler:8.2.1'
 
     /**
      * 车型索引控件
      * https://github.com/YoKeyword/IndexableRecyclerView
      **/
-    compile
+    compile 'me.yokeyword:indexablerecyclerview:1.3.0'
 
-    'me.yokeyword:indexablerecyclerview:1.3.0'
-
-compile
-    'com.android.support:appcompat-v7:25.3.1'compile
-    'com.android.support.constraint:constraint-layout:1.0.2'compile
-    'com.jakewharton:butterknife:8.2.1'compile
-    'net.qiujuer.genius:ui:2.0.0-beta8'compile
-    'com.belerweb:pinyin4j:2.5.0'compile
-    'me.yokeyword:indexablerecyclerview:1.3.0'testCompile 'junit:junit:4.12'
-    apt 'com.jakewharton:butterknife-compiler:8.2.1'
 }

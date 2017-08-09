@@ -14,7 +14,6 @@ import android.support.v4.content.ContextCompat;
 
 import com.haidaoservice.lib.common.tool.NetworkUtil;
 import com.haidaoservice.lib.view.dialog.DialogHelp;
-import com.haidaoservice.yhs.MainActivity;
 import com.haidaoservice.yhs.R;
 import com.haidaoservice.yhs.base.BaseActivity;
 

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/partial_action_bar" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_text_color"
+        android:padding="@dimen/regular_dimen_x7">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/regular_dimen_x7"
+            android:layout_marginRight="@dimen/regular_dimen_x7"
+            android:background="@color/bg_white"
+            android:hint="搜索"
+            android:padding="@dimen/regular_dimen_x5"
+            android:textSize="@dimen/text_size_14" />
+    </FrameLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_white"
+        android:paddingBottom="@dimen/regular_dimen_x5"
+        android:paddingLeft="@dimen/regular_dimen_x10"
+        android:paddingTop="@dimen/regular_dimen_x5"
+        android:text="热点问题"
+        android:textColor="@color/gray_text_color"
+        android:textSize="@dimen/text_size_14" />
+
+    <View style="@style/normal_line_horizontal" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <FrameLayout
+        android:id="@+id/flFeedBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@android:color/white"
+        android:padding="@dimen/regular_dimen_x7">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/ic_keyboard_arrow_right_24dp"
+            android:drawablePadding="@dimen/regular_dimen_x5"
+            android:gravity="center"
+            android:text="意见反馈"
+            android:textColor="@color/gray_text_color"
+            android:textSize="@dimen/text_size_14" />
+    </FrameLayout>
+</LinearLayout>
